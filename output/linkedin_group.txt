@@ -1,0 +1,2162 @@
+0 notifications total
+
+Skip to search
+
+Skip to main content
+
+Keyboard shortcuts
+Close jump menu
+Search
+Home
+My Network
+Jobs
+Messaging
+Notifications
+Harshareddy R
+Me
+
+For Business
+Learning
+
+Harshareddy R
+AI/ML Data Scientist | NLP • Computer Vision • Scalable ML Pipelines | Python, PyTorch, XGBoost | Fraud, Risk & Predictive Analytics
+
+United States
+
+
+Capital One
+Profile viewers
+63
+Post impressions
+378
+Achieve 4x more profile visits
+Reactivate Premium: 50% Off
+Saved items
+Groups
+Newsletters
+Events
+Visit profile for Harshareddy R
+
+Start a post
+
+Video
+
+Photo
+Write article
+
+Sort by:
+Top
+feed updates
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+Feed post number 23
+sharanya’s profile photo
+sharanya mulinti likes this
+
+
+View Fatima K’s  graphic link
+Fatima KFatima K
+   • 2ndVerified • 2nd
+Technical Recruiter at Momento USATechnical Recruiter at Momento USA
+2h •  2 hours ago • Visible to anyone on or off LinkedIn
+
+Follow
+Role- GCP Data Architect
+Location: (Wilmington DE or Jersey City NJ)
+ 
+The GCP Data Architect will serve as the key technical leader responsible for the comprehensive end-to-end data architecture, design, and governance of the Google Cloud BigQuery platform, ensuring scalable, secure, and cost-effective analytics solutions.
+
+Skills:
+Sqoop, DataFlow, DataProc, Cloud Pub/Sub, Cloud Composer, PySpark, Python, GCS, BigQuery, DAG, DataPlex
+
+Certifications:
+GCP Cloud Architect
+GCP Professional Data Engineer
+Exp: 10-16 
+
+JD:
+Data Architect   - Architectural Strategy: Design and implement a scalable, cost-optimized BigQuery architecture leveraging advanced features such as partitioning, clustering, and materialized views to maximize performance and minimize costs
+- Data Modeling: Develop robust enterprise data models and semantic layers to support comprehensive analytics, reporting, business intelligence, marketing campaign optimization, and advanced data science use cases
+- Business Engagement: Act as a trusted advisor to executives and business teams, translating business objectives into technical solutions that drive measurable outcomes
+- Data Management: Define and implement master and reference data strategies to ensure data consistency, accuracy, and governance across multiple domains
+- Data Quality Automation: Lead initiatives to automate data quality assurance by creating business transformation rules, automated checks, and reconciliation frameworks to uphold high data integrity standards
+- Testing & Validation: Collaborate with QA teams to review and validate test cases, ensuring full coverage of business use cases and requirements, and rigorously assess data quality results
+- Integration & Deployment: Coordinate across multiple teams to manage system dependencies, validate integration points, and support seamless system deployment activities
+- User Acceptance Testing (UAT) & Production Rollouts: Work closely with business and IT stakeholders to coordinate UAT signoffs and oversee production cutovers, ensuring smooth deployment with well-defined fallback and contingency plans
+- Governance & Security: Establish and enforce data governance standards including IAM role configurations, encryption policies, metadata management, and data lineage tracking
+- Cost & Performance Optimization: Continuously monitor BigQuery usage and performance metrics to recommend and implement strategies for query optimization, and storage lifecycle policies to balance performance with cost efficiency
+
+Key Deliverables
+Enterprise Data Architecture Blueprint covering the full data lifecycle from ingestion through to consumption.
+Comprehensive Data Models reflecting enterprise needs and governance standards.
+Integration & Deployment Plans with dependency tracking.
+UAT and Production Rollout Strategy aligned with business and IT needs. 
+
+Thanks,
+subia@momentousa.com
+…more
+like
+4
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 24
+Suggested
+
+
+View Rakesh D L’s  graphic link
+Rakesh D LRakesh D L
+   • 2ndVerified • 2nd
+Azure Data Engineer | Microsoft Fabric Certified | 3x Azure Certified | ADF | Databricks | Synapse | Data lake | SQL | PySparkAzure Data Engineer | Microsoft Fabric Certified | 3x Azure Certified | ADF | Databricks | Synapse | Data lake | SQL | PySpark
+4d •  4 days ago • Visible to anyone on or off LinkedIn
+The 𝗛𝗮𝗿𝘀𝗵 Reality Of Data Engineering Interviews These Days...
+
+𝗥𝗲𝗮𝗹𝗶𝘁𝘆 in the Interview:
+1st round: “Write a window function SQL query on a whiteboard. Optimize it for a billion rows. Explain multi-cloud failover.”
+
+2nd round: “How would you partition, orchestrate, and monitor real-time CDC from 4 sources into a lakehouse… and minimize cost to zero?”
+
+3rd round: “Design a hybrid lakehouse with S3, Delta, Iceberg, AND Hudi. Bonus: code a data contract in 10 minutes.”
+
+Behavioral: “Tell us about a project where you did everything… alone.
+
+The Real 2025 Data Engineering Stack:
+
+1. Python + SQL (always)
+2. One cloud (Azure/GCP/AWS)—deeply, not all three on your CV
+3. Orchestration: Airflow / Prefect
+4. Data warehouse: Redshift / BigQuery / Snowflake
+5. Some Spark or dbt
+6. Git, CLI, debugging chops
+
+If I could give advice to every DE candidate prepping for interviews this year:
+Master one real end-to-end pipeline (cloud + orchestration + warehouse + BI).
+
+Here are 5 FREE Projects you can Practice..
+1.Real-Time Taxi Ride Analytics Pipeline (NYC Data): https://lnkd.in/gEw86aNY
+2. YouTube Trending Videos ETL (Batch Data Pipeline): https://lnkd.in/gX8D3iYj
+3.IoT Device Data Streaming and Processing: https://lnkd.in/dCNivkFQ
+4. Wikipedia Web Clickstream Analysis: https://lnkd.in/gtfhH_-m
+5. Stock Market Data Lake with Airflow Automation: https://lnkd.in/g7TwHyur
+
+𝗜 𝗵𝗮𝘃𝗲 𝗽𝗿𝗲𝗽𝗮𝗿𝗲𝗱 𝗖𝗼𝗺𝗽𝗹𝗲𝘁𝗲 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗣𝗿𝗲𝗽𝗮𝗿𝗮𝘁𝗶𝗼𝗻 𝗚𝘂𝗶𝗱𝗲 𝗳𝗼𝗿 𝗗𝗮𝘁𝗮 𝗘𝗻𝗴𝗶𝗻𝗻𝗲𝗿𝘀.
+
+𝗚𝗲𝘁 𝘁𝗵𝗲 𝗚𝘂𝗶𝗱𝗲 𝗵𝗲𝗿𝗲 - https://lnkd.in/gFrNbK87
+
+If you’ve read this far, do 𝗟𝗜𝗞𝗘 👍 & 𝗥𝗘𝗦𝗛𝗔𝗥𝗘 🔁 to help more aspiring 𝗗𝗮𝘁𝗮 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝘀 prepare smarter!
+
+hashtag#DataEngineering hashtag#InterviewTruth hashtag#TechStack hashtag#CareerAdvice
+…more
+likeinsightfullove
+149
+5 comments
+10 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 25
+
+
+Python Developers Community (moderated)Python Developers Community (moderated)
+Shubham Patel • 2ndShubham Patel • 2nd
+8h •  8 hours ago • Visible to anyone on or off LinkedIn
+
+
+Most analysts waste hours translating Excel into Python & SQL. This 1-page cheat-sheet fixes that. 👇
+
+If you work with data, you don’t need to choose Excel, Python, or SQL — you need to know when to use each. I made a single-page mapping that shows the exact equivalent for everyday tasks (load → filter → join → aggregate).
+
+Use this flow:
+• Excel to quickly explore & validate.
+• SQL to extract & aggregate from databases.
+• Python (Pandas) to clean, transform, and automate.
+
+Key quick wins from the sheet:
+• Filter rows — Filter → df[df['col']>100] → WHERE col > 100
+• Group & aggregate — Pivot/Group → df.groupby('dept').size() → GROUP BY
+• New column by condition — IF() → np.where(...) → CASE WHEN ...
+• Top N rows — Sort + Filter → df.nlargest(5,'col') → SELECT TOP 5 ...
+
+Why this matters: knowing the equivalent command saves HOURS when moving from prototype (Excel) to production (SQL/Python). It’s proven: hybrid mastery = faster delivery, fewer bugs, better dashboards.
+
+👇 Action (do this now):
+
+• Save this infographic for interview prep.
+• Comment: SQL, Python or Excel — which do you rely on most?
+• Tag one person who should see this.
+• Follow Shubham Patel for more useful content related to Excel, Power BI, Python and SQL.
+
+hashtag#Python hashtag#LearnPython hashtag#PythonTips hashtag#Coding hashtag#Programming hashtag#DataScience hashtag#DataAnalytics hashtag#Developer hashtag#Tech hashtag#Upskill hashtag#CareerGrowth hashtag#MachineLearning hashtag#Pandas hashtag#NumPy hashtag#SoftwareEngineering hashtag#CodingCommunity hashtag#InterviewPrep hashtag#LinkedInLearning hashtag#shubhampatel91 hashtag#shubhampatel
+…more
+Activate to view larger image,
+table
+Activate to view larger image,
+likeinsightfullove
+559
+1 comment
+45 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+Feed post number 27
+
+OtB Tech LLCOtB Tech LLC
+18,956 followers18,956 followers
+3d •  3 days ago • Visible to anyone on or off LinkedIn
+
+
+Senior Data Modeler
+Experience: 15+ Years
+Location: Berkeley NJ or Coral Springs FL (Onsite from Day 1)
+
+We are seeking a Senior Data Modeler with deep, hands-on experience to design and deliver enterprise-grade data architecture solutions. This day-one onsite role requires expertise in data modeling, data governance, and modern data architecture across cloud and on-prem environments, preferably within the financial services domain.
+
+The ideal candidate will lead the design of conceptual, logical, and physical data models, enforce enterprise data standards, support real-time and analytical data platforms, and collaborate closely with business, engineering, BI, and data governance teams.
+
+Share to nicky@otbtechllc.com
+like
+2
+1 repost
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 28
+GSaicharan Royal
+GSaicharan Royal celebrates this
+
+
+View Nagalakshmi yadav’s  graphic link
+Nagalakshmi yadavNagalakshmi yadav
+ • 3rd+3rd+
+Us it Benchsale recruiter at koya consulting IncUs it Benchsale recruiter at koya consulting Inc
+1d •  1 day ago • Visible to anyone on or off LinkedIn
+
+Follow
+Hi Recruiters,
+Please find my updated hotlist of highly skilled consultants available for C2C roles. 
+Email : tina@koyaconslt.com
+Desk Number : 346 382 1683
+Haribabu-----Data Engineer (ETL)----19+ Years----Onsite (Plano, TX)
+Sudarshan-----Snowflake Lead Data Engineer / Oracle / Teradata----16+ Years----Remote
+Abhiram-----GCP Data Engineer----11 Years----Remote
+Rahul-----Mainframe Developer / Product Owner----18+ Years----Onsite (Raleigh, NC)
+Mustafa-----Business Systems Analyst (BSA)----15+ Years----Remote
+Dhana Rekha-----Senior Data Analyst----15 Years----Onsite (Bellevue, WA)
+Radha-----ServiceNow Architect----11+ Years----Remote
+Sulochana Praveen-----Workday HCM Techno-Functional Consultant----13+ Years----Remote
+Siva Kumari-----Salesforce CRM Consultant----14+ Years----Remote
+Naveen Kumar-----Salesforce Developer----11+ Years----Remote
+Sreenivasa Reddy-----ETL Developer (Informatica Cloud – IICS / IDMC)----14 Years----Remote
+Sunil Kumar-----Data Architect----14+ Years----Onsite (Madison, WI)
+Ramesh Varma-----Cloud Architect / AWS DevOps----13+ Years----Remote
+Sudhakar-----.NET / Azure Technical Lead----15 Years----Remote
+Praveen-----SRE / DevOps / Cloud & Middleware Engineer----14 Years----Onsite (Eagan, MN)
+Navaneetha-----DevOps Engineer / SRE----13 Years----Remote (SC/NC Onsite)
+Balamurugan-----Lead AEM Developer----16+ Years----Remote
+Anirudh-----Java Full Stack Developer----10+ Years----Onsite (Dallas, TX)
+Venkata Subbarao-----Sr. Java Full Stack Developer----18 Years----Remote (Dallas TX Onsite)
+Naveen Chowdary---Lead RPA Developer---10+ Years---Onsite (Austin, TX)
+Sivakumar---Project Manager / Scrum Master---18+ Years---Remote
+Rajesh---SharePoint Architect / O365 Migration Lead---19+ Years---Remote (Hybrid NJ)
+Dinesh Reddy---D365 Power Platform Technical Lead---12+ Years---Remote
+Uday Goud---Dynamics CRM Senior Consultant / D365 CE Senior Developer----10+ Years--Remote
+Balamurugan---Lead AEM Developer---16+ Years---Remote
+Pramod Kumar----Sr. Technical Lead / Architect--15 Years---Remote
+Pushpa---Power BI Developer / Admin / Analyst--13 Years--Remote
+Ashritha---System Administrator (Linux/UNIX, Ansible, OpenShift)--13+ Years--Remote
+Jaswanth---Sr. MuleSoft Developer--10+ Years--Remote
+Jagadish---IAM / SSO / Ping Engineer--11+ Years--Remote
+Venkat Reddy--Oracle PL/SQL Developer--13+ Years--Remote
+Dattatraya Sudamrao---Oracle DBA / SQL Server / Cassandra DBA--15+ Years----Onsite (Plano, TX)
+Krishna Kishore--Sr. Tableau Developer--11+ Years--Onsite / Remote (Dallas)
+Vignan---Performance Engineer--9+ Years--Remote
+
+hashtag#C2C 
+hashtag#Remote 
+hashtag#d365 
+hashtag#devops #java#sap 
+hashtag#abap 
+hashtag#fico 
+hashtag#remote 
+hashtag#onsite
+hashtag#texas 
+hashtag#hybrid 
+hashtag#Architect 
+hashtag#developer 
+hashtag#lead 
+hashtag#servicenow 
+hashtag#salesforce 
+hashtag#devops 
+hashtag#aws 
+hashtag#azure 
+hashtag#gcp 
+hashtag#cloud 
+hashtag#EWM 
+hashtag#finance 
+hashtag#fico 
+hashtag#dotnet 
+hashtag#usa 
+hashtag#mainframe 
+hashtag#workday 
+hashtag#sre 
+hashtag#mulesoft 
+hashtag#AEM 
+hashtag#dynamics 
+hashtag#microsoft 
+hashtag#gisanalyst 
+hashtag#scrum 
+hashtag#master 
+hashtag#rpa 
+hashtag#immediate 
+hashtag#hotlist 
+hashtag#updated 
+hashtag#available 
+hashtag#product
+hashtag#owner 
+hashtag#data 
+hashtag#engineer 
+hashtag#techincal 
+hashtag#fucntional 
+hashtag#lead
+likecelebrate
+4
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 29
+View Jay Feng’s  graphic link
+Jay FengJay Feng
+   • FollowingVerified • Following
+Ace your next technical interview with Interview QueryAce your next technical interview with Interview Query
+2w •  2 weeks ago • Visible to anyone on or off LinkedIn
+
+
+Pinterest is hiring a Machine Learning Engineer in the United States (Remote)
+
+This role sits on the User Understanding team, influencing core products across Discovery, Ads, and Growth.
+
+Here's how to ace this role: https://lnkd.in/gvhiEzVX
+
+Responsibilities:
+→ Lead and mentor machine learning engineers building user understanding and personalization models
+→ Design and deploy large-scale ML systems for search, recommendation, and ads
+→ Partner closely with product, data science, and engineering to drive measurable user engagement
+
+Check out more jobs here: https://lnkd.in/gYvnMcPs
+
+Apply here: https://lnkd.in/e3iTPw3R
+
+hashtag#Pinterest hashtag#machinelearning hashtag#datascience hashtag#mlengineer hashtag#remotejobs
+
+Machine Learning Engineer
+Job by Pinterest
+United States (Remote)
+Medical, Vision, Dental, 401(k)
+View job
+View job
+likesupportlove
+111
+1 comment
+9 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+Feed post number 31
+View Sravya Kodavatiganti’s  graphic link
+Sravya KodavatigantiSravya Kodavatiganti
+   • 1stVerified • 1st
+Business Intelligence Engineer/ Data | ETL Pipelines • Power BI • Python • SQL | Fraud & Risk Analytics | Azure CloudBusiness Intelligence Engineer/ Data | ETL Pipelines • Power BI • Python • SQL | Fraud & Risk Analytics | Azure Cloud
+2d •  2 days ago • Visible to anyone on or off LinkedIn
+
+
+Upskilling is the only way to stay ahead in the ever-evolving world of Ad Tech. 
+I’m thrilled to announce that I’ve successfully completed the Display & Video 360 Certification Exam from Google!
+As the digital landscape shifts toward more automated and data-centric buying, understanding the nuances of DV360 is more important than ever. I’m looking forward to leveraging these advanced programmatic skills to execute more effective, high-performing campaigns.
+A big thank you to the Google Skillshop resources for the comprehensive training. On to the next challenge! 
+hashtag#GoogleMarketingPlatform hashtag#DV360 hashtag#Certification hashtag#CareerGrowth hashtag#Programmatic hashtag#AdOps
+…more
+Your document has finished loading
+like
+3
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 32
+New comment in your group
+
+
+
+C2C and W2 positions/ Direct clients/ Implementation Partners/All Over USAC2C and W2 positions/ Direct clients/ Implementation Partners/All Over USA
+Rao Rao • 2ndRao Rao • 2nd
+22m •  22 minutes ago • Visible to anyone on or off LinkedIn
+Title: GenAI / NLP Developer
+Location: Woonsocket, RI
+Position: Contract
+
+Share me profiles to narasimha@galaxyitech.com
+like
+4
+5 comments
+
+Like
+
+Comment
+
+Repost
+
+Send
+View Damodar Behara’s  graphic link
+Damodar Behara
+ • 2nd
+US IT Recruiter & Sales Recruiter at Keen Technology.
+3m
+
+Damodar@keentechnos.com
+
+Like
+
+Reply
+ 
+Load more comments
+
+Skip to LinkedIn News
+Feed post number 33
+View Rakshith Reddy Gopidi’s hiring graphic link
+Rakshith Reddy GopidiRakshith Reddy Gopidi
+   • 1stPremium • 1st
+CEO on STEM OPT | Building your personal AI job search assistant | AI + human-in-the-loop execution | Helping job seekers to land interviews faster | Rice UniversityCEO on STEM OPT | Building your personal AI job search assistant | AI + human-in-the-loop execution | Helping job seekers to land interviews faster | Rice University
+5d •  5 days ago • Visible to anyone on or off LinkedIn
+
+
+🚨 The job search for immigrants is a scam.
+
+Pay for tools. 
+Guess ATS keywords. 
+Scroll 1000+ career pages. 
+Still get silence.
+
+I’m an immigrant. I lived this. 
+So I built what should’ve existed already.
+
+
+👉 https://scoutbetter.jobs
+A full-stack AI job hunt platform.
+
+→ Real jobs only (company career pages) 
+→ Scraped every hour 
+→ 40+ ATS platforms 
+→ Visa-friendly roles tagged 
+→ No job boards. No spam.
+
+Tailor resumes by real skills. 
+Generate CVs. 
+Get referrals. 
+Track everything. 
+Or outsource applications when you’re done.
+
+And yes — it’s free. 
+No subscriptions. 
+No “immigrant tax”.
+
+👋 Want beta access?
+
+Comment your email. 
+First 1,000 users only.
+
+If you’re an international job seeker in the U.S. this is for you. 
+Repost if you’re tired of the system.
+
+👉 https://scoutbetter.jobs
+
+Scoutbetter - Your personal AI job search Assistant | Find your Dream Job Faster
+scoutbetter.jobs
+likecelebratesupport
+75
+211 comments
+2 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+Feed post number 35
+
+OtB Tech LLCOtB Tech LLC
+18,956 followers18,956 followers
+20h •  20 hours ago • Visible to anyone on or off LinkedIn
+
+
+Senior Data Modeler
+Experience: 15+ Years
+Location: Berkeley NJ or Coral Springs FL (Onsite from Day 1)
+
+We are seeking a Senior Data Modeler with deep, hands-on experience to design and deliver enterprise-grade data architecture solutions. This day-one onsite role requires expertise in data modeling, data governance, and modern data architecture across cloud and on-prem environments, preferably within the financial services domain.
+
+The ideal candidate will lead the design of conceptual, logical, and physical data models, enforce enterprise data standards, support real-time and analytical data platforms, and collaborate closely with business, engineering, BI, and data governance teams.
+
+Share to nicky@otbtechllc.com
+like
+1
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+Harshareddy R
+
+
+Add a comment…
+Open Emoji Keyboard
+
+
+Skip to LinkedIn News
+Feed post number 36
+Suggested
+
+
+View Omkar Lahare’s  graphic link
+Omkar LahareOmkar Lahare
+   • 3rd+Premium • 3rd+
+Data Engineer | Big Data Developer | Spark | Hive | AWS Glue | Airflow | Scala | Kafka | | Redshift | ETL | Scalable Data Solutions| Telecom & Banking Analytics | ETL , Orchestration , CloudData Engineer | Big Data Developer | Spark | Hive | AWS Glue | Airflow | Scala | Kafka | | Redshift | ETL | Scalable Data Solutions| Telecom & Banking Analytics | ETL , Orchestration , Cloud
+15h •  15 hours ago • Visible to anyone on or off LinkedIn
+
+Follow
+The Ultimate Data Engineering Roadmap 🛠️
+
+Whether you're just starting out or looking to level up your skills, this roadmap is a fantastic guide to mastering the data engineering journey.
+
+Here's a quick breakdown:
+
+1. Programming Languages
+
+🟡 Start with these core languages:
+
+Python – easy and powerful
+Java and Scala – for big data tools
+SQL – must-know for working with databases
+
+2. Processing Approaches
+
+⚙️ Learn two types of data processing:
+
+Batch: Process data in chunks (e.g. Spark, Hadoop, Flink)
+Stream: Real-time data (e.g. Kafka, Akka)
+
+3. Databases
+
+🗃️ Understand how to store and manage data:
+
+Relational: MySQL, PostgreSQL (structured data)
+Non-Relational: MongoDB, Cassandra (flexible data)
+
+4. Messaging Platforms
+
+🔁 For real-time communication between systems:
+
+Tools like Kafka, RabbitMQ, Pulsar
+
+5. Data Lakes & Warehouses
+
+🏞️ Where data is stored and analyzed:
+
+Tools: Snowflake, BigQuery, S3, Redshift, Hive, Clickhouse
+
+6. Cloud Platforms
+
+☁️ Learn popular cloud services:
+
+AWS, GCP, AZURE, Heroku, DigitalOcean, Lambda
+
+7. Storage Systems
+
+💾 For storing large data:
+
+Use HDFS, Amazon S3, Azure Data Lake, GCS
+
+8. Orchestration Tools
+
+🛠️ Automate your data pipelines:
+
+Tools like Airflow, Luigi, Jenkins
+
+9. Automation & Deployment
+
+🚀 For smooth operations and code deployment:
+Learn Jenkins, Docker, GitHub Actions, Terraform
+
+10. Dashboards & Visualization
+
+📊 Make data understandable and beautiful:
+
+Use Jupyter, PowerBI, Tableau, Plotly
+
+Image 🖼️ Credits : ByteByteGo 
+
+📌 Save and share this roadmap and refer back to it as you grow. The world of data engineering is vast but incredibly exciting!
+…more
+Activate to view larger image,
+graphical user interface, diagram
+
+See content credentials
+Activate to view larger image,
+like
+22
+3 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 37
+
+C2C and W2 positions/ Direct clients/ Implementation Partners/All Over USAC2C and W2 positions/ Direct clients/ Implementation Partners/All Over USA
+Ayush Jain • 3rd+Ayush Jain • 3rd+
+3m •  3 minutes ago • Visible to anyone on or off LinkedIn
+
+
+Hello All,
+Hope you are doing well!! 😊
+Greetings from MTK Technologies!!
+I have an urgent opening 100% closable.
+Interested can share their profiles at ayushj@mtktechnologies.com
+
+Title: Java Architect (AWS Application Migration)
+Location: Austin, TX (Onsite)
+Duration: Contract
+
+Looking for AWS Application Migration Expert with 15+ years of experience.
+like
+1
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+Harshareddy R
+
+
+Add a comment…
+Open Emoji Keyboard
+
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+Feed post number 39
+View Sravya Kodavatiganti’s  graphic link
+Sravya KodavatigantiSravya Kodavatiganti
+   • 1stVerified • 1st
+Business Intelligence Engineer/ Data | ETL Pipelines • Power BI • Python • SQL | Fraud & Risk Analytics | Azure CloudBusiness Intelligence Engineer/ Data | ETL Pipelines • Power BI • Python • SQL | Fraud & Risk Analytics | Azure Cloud
+2w •  2 weeks ago • Visible to anyone on or off LinkedIn
+
+
+I challenged myself to master SQL.
+I just cleared the HackerRank SQL Advanced assessment. It pushed me to go deep into Window Functions, Query Optimization, and Complex Joins—skills that are critical for modern Data Engineering and Analytics.
+…more
+
+
+Celebrating a New Certification
+like
+10
+Sravya Kodavatiganti and 9 others
+6 comments
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+
+Congratulations! 🎉
+
+🎉🎉🎉
+
+👏 Well deserved, Sravya
+
+Wishing you the best
+
+🎉 Excited for you
+
+
+Skip to LinkedIn News
+Feed post number 40
+View Apexon
+Apexon likes this
+
+
+View Susan Persichetti’s  graphic link
+Susan PersichettiSusan Persichetti
+   • 3rd+Verified • 3rd+
+Director of Global Partnerships at Apexon, Goldman Sachs PortCoDirector of Global Partnerships at Apexon, Goldman Sachs PortCo
+3d •  3 days ago • Visible to anyone on or off LinkedIn
+
+Follow
+Today marks a huge milestone for Apexon, and one that speaks to the years of focus, rigor, and belief our teams have poured into building world‑class engineering capabilities.
+
+Apexon has officially achieved the Amazon Web Services (AWS) DevOps Competency, a designation awarded only to partners who demonstrate deep technical expertise, consistent customer success, and a mature DevOps practice. 
+
+What makes this achievement even more meaningful is that it represents our third AWS Competency in just two years, joining our Migration and Life Sciences competencies. It’s another proof point that when we commit to excellence, we deliver. 
+
+This milestone also strengthens our collaboration with AWS. With this competency, AWS is investing in us through Marketing Development Funds to accelerate joint go‑to‑market initiatives, a huge vote of confidence in our partnership and our ability to co‑create value for clients. 
+
+But beyond the badge, this moment is about our people.
+Our engineers, architects, delivery leaders, and alliance teams continue to raise the bar. They’ve built a DevOps practice grounded in real outcomes automation that accelerates delivery, operating models that improve resilience, and solutions that help clients move from implementation to business value faster.
+
+To everyone at Apexon and our Amazon Web Services (AWS) counterparts, thank you.
+To our clients, this is another step in our promise to deliver excellence.
+To our future clients, we’re just getting started.
+Kavita Sharma Khandhadia amazing job!
+Justin Marcucci Claudia Hritcu 
+Mukund Kalmanker Puneet Piplani Umashankar Kotturu Sriniketh Chakravarthi
+hashtag#Onward hashtag#Apexon hashtag#AWS hashtag#DevOps hashtag#CloudTransformation hashtag#EngineeringExcellence
+likecelebratelove
+69
+6 comments
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 41
+View Yochana
+Yochana commented on this
+
+
+View Nicole Seeley’s  graphic link
+Nicole SeeleyNicole Seeley
+   • 3rd+Verified • 3rd+
+Senior Healthcare Technology RecruiterSenior Healthcare Technology Recruiter
+1w • Edited •  1 week ago • Edited • Visible to anyone on or off LinkedIn
+
+Follow
+Happy Friday!!
+I am Currently hiring for a Remote Epic Orders Analyst position. 
+
+This is a short-term contract (2 months to start, with potential for extension) and requires a commitment of 40 hours per week. 
+
+Candidates must have a current and active Epic Orders Certification. 
+Ideally seeking 6+ years of experience, with potentially for flexibility in years for the right candidate :)
+
+If you are interested or know someone who might be, please send me a message !
+
+This is a W2 only position, unfortunately we cannot work on a C2C / 3rd party basis on this position
+likelovesupport
+49
+8 comments
+3 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+View Yochana’s profile
+Yochana
+155,000 followers
+6d
+
+We offer a deep bench of certified Epic professionals ready to accelerate your digital transformation and long-term organizational goals. We have good number of Epic consultants, we can support
+
+Like
+
+Reply
+ 
+Load more comments
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+Feed post number 43
+View Sravani K’s open to work graphic link
+Sravani KSravani K
+ • 1st1st
+Senior Data Modeler/Engineer | ERwin | Big Data & Cloud Analytics | Spark, Kafka, Databricks| ETL/ELTSenior Data Modeler/Engineer | ERwin | Big Data & Cloud Analytics | Spark, Kafka, Databricks| ETL/ELT
+7h •  7 hours ago • Visible to anyone on or off LinkedIn
+
+
+🔧 Talend in Modern Data Engineering: More Than Just ETL
+
+Talend plays a critical role in building governed, scalable, and reliable data pipelines across enterprise systems.
+
+In large-scale environments (Healthcare, Banking, Retail), Talend enables:
+
+ ~ Standardized data ingestion & transformation across cloud and on-prem sources
+~ Built-in data quality, validation, and schema control to ensure trusted datasets
+~ Governance & compliance through metadata management, lineage, and audit-ready pipelines
+
+By integrating Talend with cloud platforms, data lakes, and data warehouses, data engineers ensure the secure and high-quality delivery of analytics-ready data for downstream reporting and decision-making.
+
+Talend isn’t just about moving data-it’s about delivering governed data at scale.
+
+hashtag#Talend hashtag#DataEngineering hashtag#ETL hashtag#DataGovernance hashtag#DataQuality hashtag#EnterpriseData hashtag#Analytics hashtag#DataOps
+like
+13
+1 comment
+1 repost
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 44
+Pavan Kruthik’s profile photo
+Pavan Kruthik Nagaram likes this
+
+
+View Will Hewitt’s  graphic link
+Will HewittWill Hewitt
+   • 3rd+Verified • 3rd+
+Recruitment Consultant | ServiceNowRecruitment Consultant | ServiceNow
+3h •  3 hours ago • Visible to anyone on or off LinkedIn
+
+Follow
+CIS ServiceNow Certifications Matter
+
+Strong ServiceNow support isn’t just about experience—it’s about consistency and credibility. CIS certifications validate real platform knowledge, best practices, and hands-on capability.
+
+CIS certs help bridge the gap between “keeping the lights on” and delivering scalable, high-quality solutions. They improve troubleshooting, reduce rework, and build trust with stakeholders. That is value. 
+
+In short: better skills, better support, better outcomes. If you are struggling to find a new role, this would be a great area to start learning.
+like
+8
+Pavan Kruthik Nagaram and 7 others
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 45
+View Rakshith Reddy Gopidi’s hiring graphic link
+Rakshith Reddy GopidiRakshith Reddy Gopidi
+   • 1stPremium • 1st
+CEO on STEM OPT | Building your personal AI job search assistant | AI + human-in-the-loop execution | Helping job seekers to land interviews faster | Rice UniversityCEO on STEM OPT | Building your personal AI job search assistant | AI + human-in-the-loop execution | Helping job seekers to land interviews faster | Rice University
+1w •  1 week ago • Visible to anyone on or off LinkedIn
+
+
+For immigrants, job searching isn’t just hard it’s draining.
+You do everything right and still hear nothing back.
+I lived this. That’s why we rebuilt the system.
+
+https://scoutbetter.jobs/ - Sponsored jobs from company career pages, tracked across 40+ ATS tools, scraped hourly, tailor resumes aligned to JDs, CVs generated, referrals + tracking — all in one place.
+
+Free beta. Comment your email.
+…more
+Activate to view larger image,
+graphical user interface, application, Teams
+Activate to view larger image,
+likesupportcelebrate
+129
+Rakshith Reddy Gopidi and 128 others
+168 comments
+1 repost
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+Feed post number 47
+Anu’s profile photo
+Anu Kumar commented on this
+
+
+Alan H.
+Alan H.Alan H.
+   • 2ndPremium • 2nd
+Recruiter | Traveller | Foodie | Boys toys enthusiastRecruiter | Traveller | Foodie | Boys toys enthusiast
+View my portfolio
+2w •  2 weeks ago • Visible to anyone on or off LinkedIn
+
+Follow
+Now looking for a QA Engineer - Anonymization Validator.
+
+100% remote
+Skills - QA and data validation, K-anonymity validation techniques, SQL for data comparison and profiling, defect tracking tools
+Duration - 6+ months, C2C/W2, cannot sponsor
+
+Please share relevant profiles at alan.haston@accionlabs.com for an immediate response.
+
+hashtag#kanonumity hashtag#qualityengineer hashtag#defecttracking hashtag#sql hashtag#datavalidation hashtag#datacomparison hashtag#dataprofiling hashtag#opentowork hashtag#remote hashtag#directclient hashtag#linkedinjobs hashtag#nowhiring
+like
+21
+Anu Kumar and 20 others
+5 comments
+
+Like
+
+Comment
+
+Repost
+
+Send
+View Anu Kumar’s open to work graphic link
+Anu Kumar
+ • 1st
+Validation Engineer | QA
+1w
+
+Interested ! 
+
+Like
+
+Reply
+ 
+Load more comments
+
+Skip to LinkedIn News
+Feed post number 48
+Anvitha Attunuri’s job update
+
+Anvitha’s profile photo
+View Capgemini
+Anvitha started a new position
+Associate Consultant at Capgemini
+likecelebrate
+7
+4 comments
+
+Like
+
+Comment
+
+
+Congratulations! 🎉
+
+Wishing you the best
+
+🎉 Excited for you
+
+🎉🎉🎉
+
+👏 Well deserved, Anvitha
+
+
+Skip to LinkedIn News
+Feed post number 49
+
+Gravity IT ResourcesGravity IT Resources
+278,281 followers278,281 followers
+7h •  7 hours ago • Visible to anyone on or off LinkedIn
+
+
+New role! Data Engineer - hashtag#Charlotte.
+
+Referral fee: +/- $1456. We’re seeking a Senior Data Engineer to support and optimize a data platform built on Azure, Databricks, and Snowflake. This is a hands-on contract role with a strong consultative component.
+
+Click the image to Apply!
+
+Data Engineer
+gravityitresources.com
+like
+8
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+Feed post number 51
+
+OtB Tech LLCOtB Tech LLC
+18,956 followers18,956 followers
+1d • Edited •  1 day ago • Edited • Visible to anyone on or off LinkedIn
+
+
+Job Title: Technical Architect
+Location: Berkeley, NJ / Carol Springs, FL (Onsite – Mandatory)
+Experience: 15+years
+
+We are looking for an experienced Technical Architect / Technical Development Lead with 15+ years of hands-on experience in full-stack Java, cloud-native application development, and microservices architecture.
+Key Highlights:
+Lead and deliver end-to-end cloud-native solutions
+Hands-on with Java, Spring/Quarkus, Microservices, APIs, and Event-Based Architecture
+Strong experience in Cloud (AWS/Azure/GCP), Kubernetes/OpenShift, Kafka
+UI technologies: Angular, React, HTML, CSS
+Expertise in security, DevOps (CI/CD), and distributed databases
+Mentor teams and work closely with business and technical stakeholders
+📍 Onsite role | Enterprise-scale projects | Leadership + hands-on development
+
+Send your resume to:
+nicky@otbtechllc.com
++1 210-898-8224
+
+ hashtag#TechnicalArchitect hashtag#JavaArchitect hashtag#CloudArchitect hashtag#Microservices hashtag#EventDrivenArchitecture hashtag#FullStackDeveloper hashtag#Kubernetes hashtag#AWS hashtag#Azure hashtag#GCP hashtag#API hashtag#DevOps hashtag#EnterpriseArchitecture hashtag#OnsiteJobs hashtag#ITCareers
+…more
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 52
+View Megan Dickson’s  graphic link
+Megan DicksonMegan Dickson
+   • FollowingPremium • Following
+Amazon Econ & Sciences Recruiter - Placing Economists, Applied, Data, and Research Scientist PhDsAmazon Econ & Sciences Recruiter - Placing Economists, Applied, Data, and Research Scientist PhDs
+2w • Edited •  2 weeks ago • Edited • Visible to anyone on or off LinkedIn
+
+
+New PhD Economist position in Arlington, Virginia!
+
+Amazon Benefits Science is looking for s PhD Economist II who's comfortable with healthcare related claims data and understands the healthcare landscape. 
+
+If this sounds like you, apply below.
+
+Apply here: https://lnkd.in/gtEKcpTB
+…more
+View Sarah Dykstra, PhD’s  graphic link
+Sarah Dykstra, PhDSarah Dykstra, PhD
+   • 3rd+Verified • 3rd+
+Senior Economist, Benefits Science at AmazonSenior Economist, Benefits Science at Amazon
+2w •  2 weeks ago • Visible to anyone on or off LinkedIn
+
+Follow
+I’m hiring an Economist to join the Benefits Science team!
+
+Our team sits at the intersection of rigorous economic research and real-world impact in health, financial, and education benefits. We use causal evaluation, structural modeling, and experiments to tackle some of the toughest challenges in benefits design—from understanding how people make coverage decisions to evaluating what actually works in improving outcomes and access.
+
+If you care about fixing what's broken in the health system and believe good economics can help get us there, this role might be for you. The work is collaborative and you'll get to work directly with smart and innovative partners across the Benefits Experience and Technology organization. 
+
+We’re looking for someone with a PhD in Economics who's comfortable with claims data and understands the healthcare landscape. If you've been wanting to apply your training to one of the most important policy challenges out there, submit an application at the link below! 
+
+https://lnkd.in/e_serp4p
+…more
+
+Economist II, Benefits eXperience and Technology (BXT)
+amazon.jobs
+like
+29
+1 comment
+2 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 53
+
+C2C and W2 positions/ Direct clients/ Implementation Partners/All Over USAC2C and W2 positions/ Direct clients/ Implementation Partners/All Over USA
+Syed R. • 2ndSyed R. • 2nd
+4m •  4 minutes ago • Visible to anyone on or off LinkedIn
+
+
+Urgent Need: Teradata, SQL Consultant Location: Sacramento CA
+ 
+New position: Teradata, SQL Consultant 
+Location: Sacramento CA
+Duration: 6+ months 
+ 
+Teradata, SQL
+
+•        Lead end to end data engineering and ETL initiatives using Informatica, Snowflake, Teradata, Databricks, and cloud data platforms to deliver high quality, scalable data solutions.
+•        Partner with business stakeholders to translate complex healthcare, finance, and enterprise data requirements into technical specifications, user stories, and data models across agile environments.
+•        Oversee production operations, automation, and issue resolution while ensuring data integrity, compliance, reliability, and continuous process optimization across large scale analytics ecosystems.
+ 
+Minimum years of experience
+10 or more years
+
+syed.rasheed@tekishub.us
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+Feed post number 55
+Suvin’s profile photo
+Suvin Shah likes this
+
+
+View Sidi Sun’s  graphic link
+Sidi SunSidi Sun
+ • 3rd+3rd+
+Analytics, Customer Insights, Voice of the CustomerAnalytics, Customer Insights, Voice of the Customer
+20h •  20 hours ago • Visible to anyone on or off LinkedIn
+
+Follow
+I’m hiring a Reporting Analyst! If you’re passionate about data, enjoy digging into complex datasets, excel at data reporting & data storytelling, and are excited to use insights to improve members’ experiences, I’d love to have you join the Chime OMX Reporting & Insights team!
+
+Reporting & Insights Analyst, Operations & Member Experience 
+Job by Chime
+United States (Remote)
+View job
+View job
+likecelebratesupport
+83
+7 comments
+9 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 56
+View Savi Devgan’s  graphic link
+Savi DevganSavi Devgan
+   • FollowingVerified • Following
+"Technical Recruiter - IT | Connecting Top Tech Talent with Leading Companies""Technical Recruiter - IT | Connecting Top Tech Talent with Leading Companies"
+2h • Edited •  2 hours ago • Edited • Visible to anyone on or off LinkedIn
+
+
+📱 Calling all Seattle Mobile Performance Experts!
+We’re looking for a Mobile Software Engineer (Android or iOS) to join us for a high-impact contract role in Seattle!
+
+If you’re obsessed with multithreading, memory management, and shipping code that hits millions of devices, we should talk.
+
+The Essentials: 
+📍 Seattle, WA (Hybrid - 3 days onsite) 
+🛠 Contract role 
+🚀 Must have shipped at least one large-scale product 
+🧠 Strong CS fundamentals + Performance tuning expertise
+
+Ready to solve complex system-level problems? Drop a comment below or DM me for details!
+
+hashtag#MobileEngineering hashtag#SeattleTech hashtag#AndroidDev hashtag#iOSDev hashtag#SoftwareJobs hashtag#ContractHiring
+…more
+like
+2
+1 comment
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 57
+View Mphasis
+Mphasis commented on this
+
+
+View Sakshi More’s open to work graphic link
+Sakshi MoreSakshi More
+   • 3rd+Verified • 3rd+
+Attended Savitribai Phule Pune UniversityAttended Savitribai Phule Pune University
+2d • Edited •  2 days ago • Edited • Visible to anyone on or off LinkedIn
+
+Follow
+Hi Hiring Team ,
+
+I am looking for an opportunity to join the organizations .I have totally 1+ years experience in the mortgage payoff process. 
+
+Preferred Location : Pune
+
+Mphasis 
+Tata Consultancy Services 
+EXL 
+Gallagher 
+Capgemini 
+Accenture
+Wipro 
+WNS
+likeinsightfulcelebrate
+26
+6 comments
+
+Like
+
+Comment
+
+Repost
+
+Send
+View Mphasis’ profile
+Mphasis
+1,559,202 followers
+1d
+
+Thank you for expressing your interest in a career with Mphasis. Please visit https://careers.mphasis.com/home.html to check out the latest job openings. Join us to hashtag#StayAhead
+
+Like
+like
+7
+
+Reply
+2 replies
+2 Replies on Mphasis’ comment
+
+See previous replies
+View PRAJWAL BC’s  graphic link
+PRAJWAL BC
+ • 3rd+
+Master of Computer Application || Python | Java | C | MySQL | UNIX | DBMS | HTML,CSS| I’m excellent in Microsoft office 365
+4h
+
+Mphasis already applied more than one month ago and gave interview also still didn't get any response 
+
+Like
+
+Reply
+ 
+Load more comments
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+Feed post number 59
+
+
+Artificial Intelligence, Machine Learning, Data Science, Python, Agentic & Generative AI ScientistArtificial Intelligence, Machine Learning, Data Science, Python, Agentic & Generative AI Scientist
+Bharvi V. • 3rd+Bharvi V. • 3rd+
+4h •  4 hours ago • Visible to anyone on or off LinkedIn
+
+
+🚀 𝐌𝐚𝐜𝐡𝐢𝐧𝐞 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐀𝐥𝐠𝐨𝐫𝐢𝐭𝐡𝐦𝐬 𝐄𝐯𝐞𝐫𝐲 𝐃𝐚𝐭𝐚 𝐒𝐜𝐢𝐞𝐧𝐭𝐢𝐬𝐭 𝐌𝐮𝐬𝐭 𝐊𝐧𝐨𝐰!
+
+Machine Learning is at the core of modern data-driven solutions, but understanding which algorithm to use and when is key. Here’s a clear breakdown to guide your journey:
+
+Machine Learning Certification Course :- https://lnkd.in/dXbU5Ck5
+
+1️⃣ Supervised Learning
+Predict outcomes using labeled data.
+
+Classification: Naïve Bayes, Logistic Regression, K-Nearest Neighbor (KNN), Random Forest, SVM, Decision Tree
+
+Regression: Simple Linear Regression, Multivariate Regression, Lasso Regression
+
+2️⃣ Unsupervised Learning
+Discover hidden patterns in unlabeled data.
+
+Clustering: K-Means, DBSCAN, PCA, Independent Component Analysis
+
+Association: Frequent Pattern Growth, Apriori Algorithm
+
+Anomaly Detection: Z-score Algorithm, Isolation Forest
+
+3️⃣ Semi-Supervised Learning
+A hybrid approach using partially labeled data.
+
+Classification: Self-Training
+
+Regression: Co-Training
+
+4️⃣ Reinforcement Learning
+Learn through trial and error by interacting with the environment.
+
+Model-Free: Policy Optimization, Q-Learning
+
+Model-Based: Learn the Model, Given the Model
+
+💡 Whether you're starting with supervised methods or exploring advanced reinforcement learning, these algorithms form the backbone of any data scientist’s toolkit.
+…more
+Activate to view larger image,
+diagram
+Activate to view larger image,
+likeloveinsightful
+99
+10 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 60
+Katie’s profile photo
+Katie Henry reposted this
+
+
+View Sana Ullah’s  graphic link
+Sana UllahSana Ullah
+   • 3rd+Verified • 3rd+
+Helping you write better, grow faster, and sound like you on LinkedIn | Ghostwriter | Copywriter | Personal brandingHelping you write better, grow faster, and sound like you on LinkedIn | Ghostwriter | Copywriter | Personal branding
+2w •  2 weeks ago • Visible to anyone on or off LinkedIn
+
+Follow
+Looking for a job in the US? Start here.
+Follow these Top 20 recruiters and HR pros:
+
+1. Allison Ruiz 
+2. Amy Miller 
+3. Bonnie Dilber 
+4. Brooke Simpson 
+5. Caitlin Cooke
+6. Chenae Erkerd, J.D., RACR 
+7. Devin Constant 
+8. Emily Mucken
+9. Haley O Neill 
+10. Jamie Brown, MBA 
+11. Jalonni Weaver
+12. Johnny C. Taylor, Jr., SHRM-SCP 
+13. Karolina Severova, SHRM-CP 
+14. Katie Henry 
+15. Kristi Kennebrew 
+16. Michelle Viezcas 
+17. Nicole Fernandez-Valle 
+18. Nicky Slavich 
+19. Sarah Davidson 🔐 
+20. Stacey Deakins
+
+These folks share job openings. 
+They give real hiring advice. 
+
+Your next opportunity might come from one of them.
+
+Repost ♻️ this for someone job hunting right now
+🔔 Follow me, Sana Ullah for more.
+likeloveinsightful
+219
+23 comments
+26 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 61
+Suggested
+
+
+View Arvind kumar’s  graphic link
+Arvind kumarArvind kumar
+   • 2ndVerified • 2nd
+Career Counselor for F-1 & OPT Students | US IT Recruiter (5+ yrs) | OPT & STEM OPT Job Strategy | Resume, LinkedIn & Employer OutreachCareer Counselor for F-1 & OPT Students | US IT Recruiter (5+ yrs) | OPT & STEM OPT Job Strategy | Resume, LinkedIn & Employer Outreach
+3h •  3 hours ago • Visible to anyone on or off LinkedIn
+
+Follow
+📊 Data Analyst vs Data Scientist — Which Path Fits You Best? 🤔
+These two roles are often confused, but the difference is huge.
+This simple breakdown makes it crystal clear 👇
+🔵 DATA ANALYST
+📌 Focus: Understanding what happened and why
+📊 Work With: Structured data (SQL tables, Excel, dashboards)
+🎯 Goal: Support business decisions with insights
+🛠 Tools: Excel | SQL | Tableau | Power BI
+📉 Skills: Data cleaning, basic statistics, visualization
+🤖 Machine Learning: ❌ Not required
+📤 Output: Dashboards, KPIs, business reports
+❓ Key Questions:
+• What happened?
+• Why did it happen?
+🎓 Career Path: Great entry point into data & analytics roles
+👉 Perfect if you enjoy storytelling with data and helping businesses make smarter decisions.
+
+🟡 DATA SCIENTIST
+📌 Focus: Predicting what will happen next
+📊 Work With: Large, complex, sometimes unstructured data
+🎯 Goal: Build predictive & intelligent systems
+🛠 Tools: Python | TensorFlow | Scikit-learn | Spark
+📉 Skills: Statistics, experimentation, modeling
+🤖 Machine Learning: ✅ Core responsibility
+📤 Output: ML models, forecasts, recommendation engines
+❓ Key Questions:
+• What will happen?
+• How can we optimize it?
+🎓 Career Path: Requires deeper technical & math expertise
+👉 Ideal if you love math, models, and solving problems at scale.
+💬 So, which one are you choosing — Analyst or Scientist?
+Drop your answer in the comments 👇
+🔁 Repost this to help someone confused about their data career!
+hashtag#DataAnalytics hashtag#DataScience hashtag#CareerInTech hashtag#AnalyticsJobs hashtag#TechCareers hashtag#Learning hashtag#Upskilling hashtag#LinkedInGrowth 🚀
+Activate to view larger image,
+timeline
+
+See content credentials
+Activate to view larger image,
+like
+16
+Manish Rao and 15 others
+1 repost
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+Feed post number 63
+View LANKA DEVA RAJU’s open to work graphic link
+LANKA DEVA RAJULANKA DEVA RAJU
+   • FollowingVerified • Following
+Data Analyst - MS SQL /EXCEL /POWER BI/ Immediate JoinerData Analyst - MS SQL /EXCEL /POWER BI/ Immediate Joiner
+1w •  1 week ago • Visible to anyone on or off LinkedIn
+
+
+Data is most powerful when it tells a clear story.
+
+Sharing a Power BI Consumer Sales Performance report where I focused on solving real business reporting problems, not just building visuals.
+
+Business problems addressed:
+ – Understanding sales and return performance across time
+ – Identifying top-performing products dynamically
+ – Analyzing category and age-group revenue contribution without cluttering the main report
+What I implemented:
+ – Built a dedicated calendar table and applied time-intelligence logic for MTD, MoM, and cumulative analysis
+ – Implemented field parameters to dynamically select top N products and analyze their sales impact across categories
+ – Designed multiple custom tooltips to surface detailed insights such as total orders, revenue, quantity sold, and return orders at date level
+ – Created an age-group analysis tooltip to evaluate category-wise revenue contribution and highlight each category’s top product with revenue
+ – Developed key KPIs including total orders, revenue, return metrics, average order value, and order ratios
+ – Performed end-to-end data modeling and wrote optimized DAX measures to ensure accuracy and performance.
+
+Every feature in this report was implemented to answer a specific business question, not just to display metrics.
+
+This project demonstrates my ability to translate business questions into scalable Power BI solutions with strong data modeling, DAX.
+
+Thanks to Vinayak Kadam for providing a challenging dataset. 
+
+If you are a recruiter or part of a talent acquisition team and believe my skills align with your requirements, I’d be happy to connect and discuss data-related opportunities. I’m currently open to work.
+
+hashtag#PowerBI hashtag#DataAnalytics hashtag#BusinessIntelligence hashtag#DashboardDesign hashtag#DAX hashtag#DataModeling
+
+Play
+Remaining time 
+1:16
+1x
+
+Playback speed
+
+Unmute
+
+Turn fullscreen on
+like
+20
+1 comment
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 64
+New comment in your group
+
+
+C2C and W2 positions/ Direct clients/ Implementation Partners/All Over USAC2C and W2 positions/ Direct clients/ Implementation Partners/All Over USA
+Anvesh Ch • 2ndAnvesh Ch • 2nd
+12m • Edited •  12 minutes ago • Edited • Visible to anyone on or off LinkedIn
+Job Title: QA Lead
+Location: Irving, TX (On-site)
+Experience: 10+ years
+Local candidates preferred
+Note: Only W2
+
+Kindly share suitable profiles to anvesh.cheekatla@innorev.com
+like
+1
+2 comments
+
+Like
+
+Comment
+
+Repost
+
+Send
+View BALARAM REDDY BULLA’s  graphic link
+BALARAM REDDY BULLA
+ • 2nd
+Sr. Bench sales recruiter
+10m
+
+Balaram@infokeysinc.com
+
+Like
+
+Reply
+ 
+Load more comments
+
+Skip to LinkedIn News
+Feed post number 65
+Ajay’s profile photo
+Ajay K. commented on this
+
+
+View Sherry X.’s  graphic link
+Sherry X.Sherry X.
+   • 2ndVerified • 2nd
+Partnerships & Strategy @ SimplifyPartnerships & Strategy @ Simplify
+3w •  3 weeks ago • Visible to anyone on or off LinkedIn
+
+Follow
+🚨 Boston Consulting Group (BCG) is hiring an entry-level AI Engineer!! 🚨
+
+💰 Up to $190,000/year
+📍 San Francisco, CA | NYC | Los Angeles, CA | Seattle, WA | Etc.
+
+You'll optimize computational efficiency of algorithms and interact directly with clients on new AI features at a top consulting firm.
+
+Link to apply:
+🔗 https://lnkd.in/gUmTpXSm
+
+I post the latest tech & product opportunities for students & 
+new grads daily – 𝗰𝗼𝗻𝗻𝗲𝗰𝘁 𝘄𝗶𝘁𝗵 𝗺𝗲 𝘁𝗼 𝘀𝘁𝗮𝘆 𝘂𝗽𝗱𝗮𝘁𝗲𝗱!
+Activate to view larger image,
+logo, company name
+Activate to view larger image,
+likelovecelebrate
+263
+5 comments
+15 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+View Ajay K.’s  graphic link
+Ajay K.
+   • Following
+Agentic Data Science | Quant | LLM Model Validator | Affective Computing | SLM | Agentic AI | Vibe Coder | MLE | Passionate About Creating Human-Centered AI Solutions
+1w
+
+Just applied – this role aligns perfectly with my work optimizing LLM workflows and building production AI agents. Check out my live RBC SEC RAG project (FastAPI + LangChain + local Llama3.2) here: https://github.com/AjayKasu1/rbc-sec-rag. Excited to contribute at BCG X
+
+GitHub - AjayKasu1/rbc-sec-rag
+Contribute to AjayKasu1/rbc-sec-rag development by creating an account on GitHub.
+
+Like
+
+Reply
+ 
+Load more comments
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+Feed post number 67
+View Capital One
+Capital One likes this
+
+
+
+BrexBrex
+297,298 followers297,298 followers
+21h •  21 hours ago • Visible to anyone on or off LinkedIn
+
+Follow
+Today, we’re excited to share that Brex and Capital One are joining forces in the largest bank-fintech deal in history.
+
+This is an important milestone for Brex and a meaningful step forward for our customers. With Capital One’s scale and resources behind us, we’ll be able to invest even more aggressively in automation and AI, deliver more intelligent workflows faster, and continue building products that help businesses grow – all while operating independently with the same team and mission.
+
+We’re incredibly excited about what’s ahead and grateful to our customers and community for being part of the journey.
+
+Read the full announcement here: https://bit.ly/4r7aY6G
+likecelebratelove
+1,747
+19 comments
+100 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 68
+View TIFIN
+TIFIN reposted this
+
+
+View Vinay Nair’s  graphic link
+Vinay NairVinay Nair
+   • 3rd+Premium • 3rd+
+Entrepreneur, Executive, Investor and Board MemberEntrepreneur, Executive, Investor and Board Member
+3d • Edited •  3 days ago • Edited • Visible to anyone on or off LinkedIn
+
+Follow
+Sunday night you use ChatGPT and it feels like magic. Monday morning you log into your company's enterprise software and the magic is gone.
+
+There's this feeling that millions of people experience every week.
+
+Sunday night, you're on the couch. You open ChatGPT. You ask it to plan a trip, summarize a book, debug some code. It's seamless. It feels like magic.
+
+Monday morning, you log into your workplace AI agent.
+
+The magic is gone. The interface is clunky. The latency is brutal. The search can't find a document you saved yesterday.
+
+We've handed the average teenager a Ferrari. We're asking the Fortune 500 to drive a Model T.
+
+The assumption in Silicon Valley is that this gap closes naturally—bigger models fix everything.
+
+I don't think so. I think it closes when we stop building horizontal and start building vertical. When we stop optimizing for breadth and start optimizing for depth.
+
+That Monday morning feeling isn't going away on its own.
+likeinsightfulcelebrate
+102
+8 comments
+2 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 69
+
+C2C and W2 positions/ Direct clients/ Implementation Partners/All Over USAC2C and W2 positions/ Direct clients/ Implementation Partners/All Over USA
+Thomas James • 3rd+Thomas James • 3rd+
+26m •  26 minutes ago • Visible to anyone on or off LinkedIn
+
+
+🔥 SEND ME CONNECTION NOW 🔥
+
+📣 Multiple Global Job Openings – Apply Now!
+
+🌍 We’re actively hiring across the USA, Canada, UK, Australia, UAE, Germany, Netherlands, and more!
+
+We’re urgently sourcing top talent for remote, hybrid, and on-site roles across various industries. Whether you're an executive or early-career professional — there’s a fit for you.
+
+💼 Executive & Leadership Roles:
+
+Chief Executive Officer (CEO)
+Vice President (VP)
+Director of Operations
+General Manager
+Product Manager
+Project Manager
+HR Manager
+Finance Manager
+IT Manager
+Marketing Manager
+Program Manager
+Operations Manager
+Executive Assistant
+
+💻 Technology & Engineering Roles:
+
+Software Engineer
+Full Stack Developer
+Front-End Developer
+DevOps Engineer
+Cloud Engineer
+Network Engineer
+QA/Test Engineer
+SAP Consultant
+IT Support Specialist
+Database Administrator
+
+📊 Data, Business & Finance Roles:
+
+Data Analyst
+Business Analyst
+Financial Analyst
+Accountant
+Bookkeeper
+Compliance Officer
+Procurement Officer
+Supply Chain Analyst
+Logistics Coordinator
+Strategy Consultant
+Revenue Manager
+
+💼 Marketing, Creative & Media Roles:
+
+Digital Marketing Specialist
+SEO/SEM Specialist
+Social Media Manager
+UX/UI Designer
+Graphic Designer
+Copywriter
+Email Marketing Specialist
+Brand Manager
+Video Editor
+Marketing Analysis
+
+💼 Administrative & Customer Service Roles:
+
+Administrative Assistant
+Office Manager
+Customer Service Representative
+Personal Assistant
+Data Entry Clerk
+Client Relations Associate
+Records Coordinator
+Executive Secretary
+
+💼 Healthcare & Medical Roles:
+
+Registered Nurse (RN)
+Licensed Practical Nurse (LPN)
+Medical Receptionist
+Nurse Practitioner
+Medical Assistant
+Dental Assistant
+Occupational Therapist
+Physical Therapist
+Healthcare Administrator
+
+✅ Immediate Interviews
+✅ Visa Sponsorship Available (for select roles)
+✅ Competitive Pay + Work with Top Global Brands
+✅ Contract, Full-Time, and Freelance Opportunities
+
+📩 If “INTERESTED” into
+INBOX ME or SEND ME A CONNECTION REQUEST NOW
+
+We'll match you with the best roles based on your skills, location, and career goals!
+…more
+ARE YOU OPEN TO NEW ROLE?
+The author can see how you vote. Learn more
+ARE YOU OPEN TO NEW ROLE?
+YES
+NO
+3 votes • 1d left1 day left
+like
+2
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+Feed post number 71
+View Naveen Sai Vinjamuri’s  graphic link
+Naveen Sai VinjamuriNaveen Sai Vinjamuri
+   • 1stPremium • 1st
+Hiring Manager @DigitronixAI | Recruitment-to-Recruitment, Staffing ServicesHiring Manager @DigitronixAI | Recruitment-to-Recruitment, Staffing Services
+Visit my website
+22h •  22 hours ago • Visible to anyone on or off LinkedIn
+
+
+🚨 We’re Hiring – OPT Recruiters 🚨
+📍 Location: Kondapur (Near AMB Mall)
+ 🧑‍💼 Experience: 1–4 Years
+ 🕒 Work Mode: Onsite
+We are looking for driven OPT Recruiters who understand US IT staffing and can work independently without hand-holding.
+Role Expectations (Read Carefully):
+End-to-end OPT recruiting experience
+Strong understanding of OPT / STEM / H1B hiring
+Candidate sourcing, screening, and coordination
+Vendor & consultant communication
+Target-oriented mindset (not clock-watchers)
+What We Offer:
+Competitive salary (based on real skills, not fake experience)
+Payroll services support available
+Growth-focused environment
+Stable team, no nonsense culture
+Who Should NOT Apply:
+Freshers
+People who need daily motivation
+Anyone afraid of targets or accountability
+📩 Interested candidates, DM me or comment “Interested”
+ Serious applicants only. Let’s not waste each other’s time.
+likesupport
+3
+Naveen Sai Vinjamuri and 2 others
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 72
+Suvin’s profile photo
+Suvin Shah likes this
+
+
+View Matt Welsh’s  graphic link
+Matt WelshMatt Welsh
+   • 3rd+Verified • 3rd+
+Applied Science @ UberApplied Science @ Uber
+6d • Edited •  6 days ago • Edited • Visible to anyone on or off LinkedIn
+
+Follow
+I'm hiring again! 
+
+Uber is investing in autonomous vehicles, and my team will be there to ensure they are as safe as possible. 
+
+I'm looking for a data scientist that is interested in developing our understanding of AV safety.
+
+https://lnkd.in/gRxhDWxU
+…more
+Data Scientist, Road Safety - Autonomous Vehicles - San Francisco, California | Uber Careers
+uber.com
+likesupportcelebrate
+141
+Suvin Shah and 140 others
+8 comments
+6 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 73
+View Apexon
+Apexon likes this
+
+
+View Apexon Ignite’s  graphic link
+Apexon IgniteApexon Ignite
+ • 3rd+3rd+
+THE HAPPINESS PLATFORMTHE HAPPINESS PLATFORM
+15h • Edited •  15 hours ago • Edited • Visible to anyone on or off LinkedIn
+
+Follow
+Apexon Ignite at the Gujarat CSR & ESG Collaborative 2026–30
+
+Apexon Ignite recently participated in the Gujarat CSR & ESG Collaborative 2026–30, hosted by CSRBOX®, bringing together leaders from CSR, ESG, industry, academia, and the development sector for a forward-looking roundtable discussion.
+
+Our very own Geetanjali Sahni moderated a high-impact conversation focused on sectoral learnings across skilling, health, education, environment, and livelihoods. The discussion encouraged candid exchanges on how organizations can drive scalable, outcome-oriented CSR in the 2026–2030 horizon.
+
+During the collaborative forum, Geetanjali Sahni and Pravinsinh Rathod engaged with leaders across diverse sectors—sharing insights, exchanging ideas, and exploring opportunities to amplify community impact through cross-sector partnerships.
+
+The roundtable also highlighted the need for:
+-Cluster-based collaboration models
+-Stronger public–private partnerships
+-Shared action on regional priorities
+-Practical strategies for long-term, sustainable development
+
+A heartfelt appreciation to CSRBOX® for curating such an inspiring platform that champions collaboration, learning, and meaningful change.
+
+One Step At A Time!
+
+hashtag#Apexon hashtag#ApexonIgnite hashtag#CSR hashtag#ESG hashtag#GujaratCSR hashtag#CSRBOX hashtag#SustainableImpact hashtag#CommunityDevelopment hashtag#SocialImpact hashtag#CollaborationForGood hashtag#FutureReadyCSR hashtag#ESGLeadership
+
+Apexon
+Geetanjali Sahni
+Pravinsinh Rathod
+Heli Z Karvat, PhD
+Bhomik Shah
+Dr Smita Kamat Ghosh
+CSRBOX®
+…more
+
+No alternative text description for this image
+
+No alternative text description for this image
+
+No alternative text description for this image
+
+No alternative text description for this image
++1
+Activate to view larger image,
+likecelebrate
+101
+4 comments
+1 repost
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+Feed post number 75
+
+
+🧑🏽‍💻Power BI: Business Intelligence Dashboards, Analysis for Analysts & Chief Operating Officers🧑🏽‍💻Power BI: Business Intelligence Dashboards, Analysis for Analysts & Chief Operating Officers
+Pedro Paulo Ribeiro - PCD • 3rd+Pedro Paulo Ribeiro - PCD • 3rd+
+2h •  2 hours ago • Visible to anyone on or off LinkedIn
+
+
+Thank God.
+I am a person with a disability (cerebral palsy) since birth, with a degree in data science and a developer since 1987.
+I wrote this preliminary documentation on 📘 Quantum Computing in Practice with IBM Quantum and Python. For a Study Guide to understand everything from the ten minutes before nothing to the cutting edge of technology. Using COPILOT PROMPT ENGINEERING - AI.
+I am looking for a job opportunity. If you know of any vacancies, please let me know.
+…more
+Your document is loading
+
+like
+8
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Skip to LinkedIn News
+
+Show more feed updates
+LinkedIn News
+
+Top stories
+Intel shares plummet after weak forecast
+1h ago • 30,162 readers
+Airlines cut hundreds of flights ahead of winter storm
+10m ago • 25,136 readers
+TikTok finalizes deal for US spinoff
+59m ago • 11,176 readers
+Citigroup eyes more layoffs of senior staff in March
+52m ago • 6,526 readers
+China nears approval of Nvidia chip imports
+49m ago • 2,214 readers
+
+Show more
+Today’s puzzle games
+Zip
+Zip #312
+
+36 connections played
+Mini Sudoku
+Mini Sudoku #165
+
+11 connections played
+Tango
+Tango #473
+
+9 connections played
+Queens
+Queens #633
+
+8 connections played
+
+
+
+Show more
+About
+Accessibility
+Help Center
+
+Privacy & Terms
+Ad Choices
+Advertising
+
+Business Services
+Get the LinkedIn app
+More
+ LinkedIn Corporation © 2026
+Harshareddy RStatus is online
+MessagingYou are on the messaging overlay. Press enter to open the list of conversations.
+
+Compose message
+You are on the messaging overlay. Press enter to open the list of conversations.
