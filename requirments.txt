@@ -1,0 +1,35 @@
+# ============================================================
+#   Google Leads Extractor & Automated Outreach System
+#   requirements.txt — Production Dependencies Only
+#   Keep it lean. No bloat. No pandas. No selenium.
+# ============================================================
+
+# ── HTTP & Web Scraping ──────────────────────────────────────
+requests                  # API calls (Serper API / web fetch)
+beautifulsoup4            # HTML parsing from scraped pages
+lxml                      # Fast parser backend for BeautifulSoup
+
+# ── Gmail API (Google OAuth Stack) ──────────────────────────
+google-api-python-client  # Core Gmail API client
+google-auth               # Google authentication handling
+google-auth-oauthlib      # OAuth 2.0 flow (first-time login)
+google-auth-httplib2      # HTTP transport layer for Gmail API
+
+# ── Config & Environment ─────────────────────────────────────
+python-dotenv             # Load secrets from .env file
+
+# ── User Experience ──────────────────────────────────────────
+tqdm                      # Progress bar when sending emails
+
+# ============================================================
+#   INTENTIONALLY EXCLUDED
+#   selenium   → not needed (no browser automation)
+#   pandas     → not needed (plain .txt file storage)
+#   numpy      → not needed (no data science ops)
+#   scrapy     → overkill for this pipeline
+# ============================================================
+
+# ── FUTURE UPGRADES (uncomment when needed) ─────────────────
+# sqlalchemy              # → if you move to SQLite/PostgreSQL
+# schedule                # → if you replace cron with Python scheduler
+# loguru                  # → if you want better logging than built-in
