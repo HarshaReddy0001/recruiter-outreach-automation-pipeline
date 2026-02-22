@@ -1,1736 +1,842 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Setup Guide — Google Leads Extractor & Automated Outreach System</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+<div align="center">
 
-  :root {
-    --bg: #0a0e17;
-    --bg2: #0f1520;
-    --bg3: #141c2e;
-    --surface: #1a2235;
-    --surface2: #1f2a40;
-    --border: #2a3550;
-    --border2: #334060;
-    --accent: #00d4ff;
-    --accent2: #7c5cfc;
-    --accent3: #00ff9d;
-    --accent4: #ff6b6b;
-    --accent5: #ffc107;
-    --text: #e8edf5;
-    --text2: #a0aec0;
-    --text3: #6b7a99;
-    --glow: 0 0 20px rgba(0,212,255,0.15);
-    --glow2: 0 0 30px rgba(124,92,252,0.2);
-  }
+# 🛠️ SETUP GUIDE
+## Google Leads Extractor & Automated Outreach System
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+**A complete step-by-step installation and usage manual.**
+*Every click. Every file. Every command. Nothing skipped.*
 
-  html { scroll-behavior: smooth; }
+---
 
-  body {
-    font-family: 'Inter', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.7;
-    font-size: 15px;
-  }
+[![Windows](https://img.shields.io/badge/Windows-10%2F11-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
+[![VS Code](https://img.shields.io/badge/VS%20Code-Required-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)](https://code.visualstudio.com/)
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Gmail API](https://img.shields.io/badge/Gmail_API-OAuth2-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](https://developers.google.com/gmail/api)
+[![Serper](https://img.shields.io/badge/Serper_API-Free_Tier-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://serper.dev)
+[![Setup Time](https://img.shields.io/badge/Setup_Time-45–60_min-brightgreen?style=for-the-badge)](.)
 
-  /* ── HERO ───────────────────────────────────── */
-  .hero {
-    background: linear-gradient(135deg, #0a0e17 0%, #0d1528 40%, #0a1628 100%);
-    padding: 80px 40px 60px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    border-bottom: 1px solid var(--border);
-  }
-  .hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: 
-      radial-gradient(ellipse 60% 40% at 50% -10%, rgba(0,212,255,0.12) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 30% at 80% 60%, rgba(124,92,252,0.08) 0%, transparent 60%);
-  }
-  .hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(0,212,255,0.08);
-    border: 1px solid rgba(0,212,255,0.25);
-    color: var(--accent);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    padding: 6px 16px;
-    border-radius: 100px;
-    margin-bottom: 28px;
-    position: relative;
-  }
-  .hero-badge::before {
-    content: '';
-    width: 6px; height: 6px;
-    background: var(--accent);
-    border-radius: 50%;
-    animation: pulse 2s infinite;
-  }
-  @keyframes pulse {
-    0%,100%{opacity:1;transform:scale(1)}
-    50%{opacity:0.4;transform:scale(0.8)}
-  }
-  .hero h1 {
-    font-family: 'Syne', sans-serif;
-    font-size: clamp(32px, 5vw, 58px);
-    font-weight: 800;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    margin-bottom: 20px;
-    position: relative;
-  }
-  .hero h1 span.grad {
-    background: linear-gradient(135deg, #00d4ff, #7c5cfc, #00ff9d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  .hero-sub {
-    font-size: 17px;
-    color: var(--text2);
-    max-width: 580px;
-    margin: 0 auto 36px;
-    font-weight: 300;
-    line-height: 1.6;
-    position: relative;
-  }
-  .hero-meta {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    flex-wrap: wrap;
-    position: relative;
-  }
-  .meta-pill {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    padding: 8px 18px;
-    border-radius: 8px;
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--text2);
-  }
-  .meta-pill .dot {
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
+---
 
-  /* ── LAYOUT ─────────────────────────────────── */
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 32px;
-  }
+> 💡 **Who this guide is for:** Anyone — even if you have never used Python, APIs, or a terminal before.
+> Follow this guide from top to bottom. The system **will work.**
 
-  /* ── SIDEBAR TOC ─────────────────────────────── */
-  .page-layout {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 48px 32px;
-    align-items: start;
-  }
-  .toc {
-    position: sticky;
-    top: 24px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 20px;
-  }
-  .toc-title {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: var(--accent);
-    margin-bottom: 16px;
-  }
-  .toc a {
-    display: block;
-    font-size: 12.5px;
-    color: var(--text3);
-    text-decoration: none;
-    padding: 5px 8px;
-    border-radius: 6px;
-    transition: all 0.2s;
-    border-left: 2px solid transparent;
-    line-height: 1.4;
-  }
-  .toc a:hover {
-    color: var(--accent);
-    background: rgba(0,212,255,0.06);
-    border-left-color: var(--accent);
-    padding-left: 12px;
-  }
-  .toc-num {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10px;
-    color: var(--text3);
-    margin-right: 6px;
-  }
-  .content { min-width: 0; }
-
-  /* ── SECTION ─────────────────────────────────── */
-  .section {
-    margin-bottom: 64px;
-    scroll-margin-top: 24px;
-  }
-  .section-header {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 28px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid var(--border);
-  }
-  .step-num {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, var(--accent), var(--accent2));
-    border-radius: 10px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 14px;
-    font-weight: 700;
-    color: #fff;
-    flex-shrink: 0;
-    box-shadow: 0 0 20px rgba(0,212,255,0.25);
-  }
-  .step-num.green { background: linear-gradient(135deg, #00ff9d, #00b4d8); }
-  .step-num.purple { background: linear-gradient(135deg, #7c5cfc, #c084fc); }
-  .step-num.orange { background: linear-gradient(135deg, #ff6b6b, #ffa07a); }
-  .step-num.yellow { background: linear-gradient(135deg, #ffc107, #ff9800); }
-  .section h2 {
-    font-family: 'Syne', sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--text);
-    line-height: 1.2;
-  }
-  .section h2 small {
-    display: block;
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--text3);
-    margin-top: 2px;
-  }
-
-  /* ── CALLOUT BOXES ────────────────────────────── */
-  .callout {
-    display: flex;
-    gap: 14px;
-    padding: 16px 20px;
-    border-radius: 10px;
-    margin: 20px 0;
-    font-size: 14px;
-    line-height: 1.6;
-  }
-  .callout-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
-  .callout.warning {
-    background: rgba(255,107,107,0.07);
-    border: 1px solid rgba(255,107,107,0.25);
-    color: #ffa0a0;
-  }
-  .callout.info {
-    background: rgba(0,212,255,0.07);
-    border: 1px solid rgba(0,212,255,0.2);
-    color: #a0d8ef;
-  }
-  .callout.success {
-    background: rgba(0,255,157,0.07);
-    border: 1px solid rgba(0,255,157,0.2);
-    color: #80ffcc;
-  }
-  .callout.tip {
-    background: rgba(255,193,7,0.07);
-    border: 1px solid rgba(255,193,7,0.2);
-    color: #ffd666;
-  }
-  .callout strong { color: inherit; font-weight: 600; }
-
-  /* ── CODE BLOCKS ─────────────────────────────── */
-  .code-block {
-    background: #070b14;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    margin: 16px 0;
-    overflow: hidden;
-  }
-  .code-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 16px;
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-  }
-  .code-lang {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    font-weight: 600;
-    color: var(--accent);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
-  .code-dots { display: flex; gap: 6px; }
-  .code-dots span {
-    width: 10px; height: 10px;
-    border-radius: 50%;
-  }
-  .code-dots span:nth-child(1){background:#ff5f56}
-  .code-dots span:nth-child(2){background:#ffbd2e}
-  .code-dots span:nth-child(3){background:#27c93f}
-  .code-block pre {
-    padding: 18px 20px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 13px;
-    line-height: 1.7;
-    color: #c9d1e0;
-    overflow-x: auto;
-    white-space: pre;
-  }
-  .code-block pre .comment { color: #4a5568; }
-  .code-block pre .keyword { color: #7c5cfc; }
-  .code-block pre .string { color: #00ff9d; }
-  .code-block pre .cmd { color: #00d4ff; }
-  .code-block pre .path { color: #ffc107; }
-
-  /* ── STEPS LIST ──────────────────────────────── */
-  .steps {
-    counter-reset: step-counter;
-    list-style: none;
-    margin: 20px 0;
-  }
-  .steps li {
-    counter-increment: step-counter;
-    display: flex;
-    gap: 16px;
-    margin-bottom: 20px;
-    align-items: flex-start;
-  }
-  .steps li::before {
-    content: counter(step-counter);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    min-width: 28px;
-    background: var(--surface2);
-    border: 1px solid var(--border2);
-    border-radius: 8px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--accent);
-    margin-top: 1px;
-  }
-  .steps li .step-body { flex: 1; }
-  .steps li .step-title {
-    font-weight: 600;
-    color: var(--text);
-    margin-bottom: 4px;
-    font-size: 14.5px;
-  }
-  .steps li .step-desc {
-    color: var(--text2);
-    font-size: 13.5px;
-    line-height: 1.6;
-  }
-
-  /* ── ARCHITECTURE DIAGRAM ────────────────────── */
-  .arch-diagram {
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 36px 28px;
-    margin: 24px 0;
-    overflow-x: auto;
-  }
-  .arch-row {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 0;
-    margin: 8px 0;
-  }
-  .arch-box {
-    background: var(--surface);
-    border: 1px solid var(--border2);
-    border-radius: 10px;
-    padding: 12px 18px;
-    text-align: center;
-    min-width: 140px;
-    max-width: 170px;
-    position: relative;
-  }
-  .arch-box.manual {
-    border-color: rgba(255,193,7,0.5);
-    background: rgba(255,193,7,0.06);
-  }
-  .arch-box.auto {
-    border-color: rgba(0,212,255,0.35);
-    background: rgba(0,212,255,0.05);
-  }
-  .arch-box.output {
-    border-color: rgba(0,255,157,0.35);
-    background: rgba(0,255,157,0.05);
-    min-width: 120px;
-    max-width: 140px;
-  }
-  .arch-box .box-icon { font-size: 20px; margin-bottom: 6px; }
-  .arch-box .box-title {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 4px;
-  }
-  .arch-box.manual .box-title { color: #ffc107; }
-  .arch-box.auto .box-title { color: var(--accent); }
-  .arch-box.output .box-title { color: var(--accent3); }
-  .arch-box .box-file {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10px;
-    color: var(--text3);
-  }
-  .arch-box .box-badge {
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #ffc107;
-    color: #000;
-    font-size: 9px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 2px 8px;
-    border-radius: 100px;
-    white-space: nowrap;
-  }
-  .arch-arrow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 8px;
-    color: var(--text3);
-    font-size: 18px;
-    line-height: 1;
-    align-self: center;
-  }
-  .arch-arrow.down {
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    margin: 8px 0;
-    font-size: 20px;
-    color: var(--border2);
-  }
-  .arch-split {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 12px;
-    margin: 8px 0;
-  }
-  .arch-label {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 9px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--text3);
-    text-align: center;
-    margin: 4px 0;
-  }
-
-  /* ── FILE TREE ────────────────────────────────── */
-  .file-tree {
-    background: #070b14;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 20px 24px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 13px;
-    line-height: 2;
-    margin: 16px 0;
-  }
-  .ft-folder { color: var(--accent); }
-  .ft-file { color: var(--text2); }
-  .ft-file.highlight { color: var(--accent3); font-weight: 600; }
-  .ft-file.warning-file { color: #ffc107; font-weight: 600; }
-  .ft-comment { color: #4a5568; font-size: 11px; }
-
-  /* ── CHECKLIST ────────────────────────────────── */
-  .checklist { list-style: none; margin: 16px 0; }
-  .checklist li {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 10px 0;
-    border-bottom: 1px solid var(--border);
-    font-size: 14px;
-    color: var(--text2);
-  }
-  .checklist li:last-child { border-bottom: none; }
-  .check-box {
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--border2);
-    border-radius: 5px;
-    flex-shrink: 0;
-    margin-top: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .checklist li strong { color: var(--text); }
-
-  /* ── KEYWORD HIGHLIGHT ────────────────────────── */
-  kbd {
-    background: var(--surface2);
-    border: 1px solid var(--border2);
-    border-bottom: 2px solid var(--border2);
-    border-radius: 5px;
-    padding: 2px 7px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    color: var(--text);
-    white-space: nowrap;
-  }
-  code {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 1px 6px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12.5px;
-    color: var(--accent3);
-  }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  p { margin-bottom: 12px; color: var(--text2); line-height: 1.7; }
-  p:last-child { margin-bottom: 0; }
-  strong { color: var(--text); font-weight: 600; }
-
-  /* ── TABLE ────────────────────────────────────── */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 16px 0;
-    font-size: 13.5px;
-  }
-  th {
-    background: var(--surface);
-    padding: 10px 14px;
-    text-align: left;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text3);
-    border: 1px solid var(--border);
-    font-weight: 600;
-  }
-  td {
-    padding: 10px 14px;
-    border: 1px solid var(--border);
-    color: var(--text2);
-    vertical-align: top;
-    line-height: 1.5;
-  }
-  tr:hover td { background: rgba(255,255,255,0.02); }
-
-  /* ── BOOLEAN BOXES ────────────────────────────── */
-  .bool-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin: 16px 0;
-  }
-  .bool-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 14px 16px;
-    position: relative;
-    overflow: hidden;
-  }
-  .bool-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 3px; height: 100%;
-    background: linear-gradient(180deg, var(--accent), var(--accent2));
-  }
-  .bool-card .bool-label {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 9px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--accent);
-    margin-bottom: 8px;
-    font-weight: 700;
-  }
-  .bool-card .bool-query {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11.5px;
-    color: #c9d1e0;
-    line-height: 1.6;
-    word-break: break-word;
-  }
-  .bool-card .bool-query .op { color: #7c5cfc; font-weight: 700; }
-  .bool-card .bool-query .term { color: #00ff9d; }
-  .bool-card .bool-query .neg { color: #ff6b6b; }
-
-  /* ── VSCODE BLOCK ─────────────────────────────── */
-  .vscode-window {
-    background: #1e1e1e;
-    border: 1px solid #333;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 16px 0;
-    box-shadow: 0 8px 40px rgba(0,0,0,0.4);
-  }
-  .vscode-titlebar {
-    background: #2d2d2d;
-    padding: 8px 14px;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    border-bottom: 1px solid #333;
-  }
-  .vs-dots { display: flex; gap: 6px; }
-  .vs-dots span { width: 11px; height: 11px; border-radius: 50%; }
-  .vs-dots span:nth-child(1){background:#ff5f57}
-  .vs-dots span:nth-child(2){background:#febc2e}
-  .vs-dots span:nth-child(3){background:#28c840}
-  .vscode-tabs {
-    display: flex;
-    background: #252526;
-    border-bottom: 1px solid #333;
-  }
-  .vs-tab {
-    padding: 8px 16px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    color: #888;
-    border-right: 1px solid #333;
-    cursor: default;
-  }
-  .vs-tab.active {
-    background: #1e1e1e;
-    color: #ccc;
-    border-bottom: 1px solid #0078d4;
-  }
-  .vscode-terminal {
-    background: #1e1e1e;
-    padding: 16px 20px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12.5px;
-    line-height: 1.8;
-    color: #cccccc;
-  }
-  .vscode-terminal .ps { color: #0078d4; }
-  .vscode-terminal .cmd-text { color: #d4d4d4; }
-  .vscode-terminal .out { color: #4ec9b0; }
-  .vscode-terminal .out.warn { color: #ce9178; }
-  .vscode-terminal .out.success { color: #6a9955; }
-  .vscode-terminal .prompt {
-    color: #569cd6;
-    user-select: none;
-  }
-
-  /* ── SECTION DIVIDER ─────────────────────────── */
-  .divider {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin: 48px 0;
-    color: var(--border2);
-    font-size: 11px;
-    font-family: 'JetBrains Mono', monospace;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
-  .divider::before, .divider::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: var(--border);
-  }
-
-  /* ── FOOTER ──────────────────────────────────── */
-  .footer {
-    background: var(--bg2);
-    border-top: 1px solid var(--border);
-    padding: 40px;
-    text-align: center;
-    color: var(--text3);
-    font-size: 13px;
-  }
-  .footer strong { color: var(--text2); }
-
-  /* ── RESPONSIVE ───────────────────────────────── */
-  @media (max-width: 768px) {
-    .page-layout { grid-template-columns: 1fr; }
-    .toc { position: static; }
-    .bool-grid { grid-template-columns: 1fr; }
-    .hero { padding: 48px 24px 40px; }
-    .arch-split { flex-wrap: wrap; }
-  }
-
-  /* ── PROGRESS INDICATOR ───────────────────────── */
-  .progress-bar {
-    display: flex;
-    gap: 4px;
-    margin-bottom: 32px;
-    flex-wrap: wrap;
-  }
-  .prog-step {
-    height: 4px;
-    flex: 1;
-    min-width: 20px;
-    background: var(--border);
-    border-radius: 2px;
-    position: relative;
-  }
-  .prog-step.done { background: linear-gradient(90deg, var(--accent), var(--accent2)); }
-  .prog-step.current { background: var(--accent); }
-
-  /* ── INLINE HIGHLIGHT ─────────────────────────── */
-  .hl { color: var(--accent); font-weight: 600; }
-  .hl.green { color: var(--accent3); }
-  .hl.yellow { color: var(--accent5); }
-  .hl.red { color: var(--accent4); }
-  .hl.purple { color: var(--accent2); }
-
-  /* ── SUB HEADING ─────────────────────────────── */
-  h3 {
-    font-family: 'Syne', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--text);
-    margin: 28px 0 12px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  h3::before {
-    content: '';
-    width: 3px;
-    height: 16px;
-    background: linear-gradient(180deg, var(--accent), var(--accent2));
-    border-radius: 2px;
-    flex-shrink: 0;
-  }
-
-  /* ── OVERVIEW CARDS ───────────────────────────── */
-  .overview-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 14px;
-    margin: 20px 0;
-  }
-  .overview-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 18px;
-    text-align: center;
-    transition: border-color 0.2s, transform 0.2s;
-  }
-  .overview-card:hover {
-    border-color: var(--border2);
-    transform: translateY(-2px);
-  }
-  .overview-card .ov-icon { font-size: 28px; margin-bottom: 10px; }
-  .overview-card .ov-title {
-    font-family: 'Syne', sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 6px;
-  }
-  .overview-card .ov-desc { font-size: 12px; color: var(--text3); line-height: 1.5; }
-  @media(max-width:600px){ .overview-grid{grid-template-columns:1fr 1fr} }
-</style>
-</head>
-<body>
-
-<!-- ═══════════════════════ HERO ═══════════════════════ -->
-<div class="hero">
-  <div class="hero-badge">Complete Setup Guide · v1.0 · Windows + VS Code</div>
-  <h1>
-    <span class="grad">Leads Extractor</span><br>
-    Automated Outreach System
-  </h1>
-  <p class="hero-sub">
-    A step-by-step walkthrough to go from zero to a fully running email outreach pipeline — no step skipped, no assumption made.
-  </p>
-  <div class="hero-meta">
-    <div class="meta-pill"><span class="dot" style="background:#00d4ff"></span> Windows 10/11</div>
-    <div class="meta-pill"><span class="dot" style="background:#7c5cfc"></span> VS Code</div>
-    <div class="meta-pill"><span class="dot" style="background:#00ff9d"></span> Python 3.8+</div>
-    <div class="meta-pill"><span class="dot" style="background:#ffc107"></span> ~45–60 min</div>
-    <div class="meta-pill"><span class="dot" style="background:#ff6b6b"></span> Gmail API</div>
-  </div>
 </div>
 
-<!-- ═══════════════════════ PAGE LAYOUT ═══════════════════════ -->
-<div class="page-layout">
-
-  <!-- SIDEBAR TOC -->
-  <aside class="toc">
-    <div class="toc-title">// Contents</div>
-    <a href="#overview"><span class="toc-num">00</span>Overview</a>
-    <a href="#prereqs"><span class="toc-num">01</span>Prerequisites</a>
-    <a href="#python"><span class="toc-num">02</span>Install Python</a>
-    <a href="#vscode"><span class="toc-num">03</span>Setup VS Code</a>
-    <a href="#project"><span class="toc-num">04</span>Get the Project</a>
-    <a href="#venv"><span class="toc-num">05</span>Virtual Environment</a>
-    <a href="#deps"><span class="toc-num">06</span>Install Dependencies</a>
-    <a href="#serper"><span class="toc-num">07</span>Serper API Key</a>
-    <a href="#gmail"><span class="toc-num">08</span>Gmail API Setup</a>
-    <a href="#apikey"><span class="toc-num">09</span>Add API Key to Script</a>
-    <a href="#linkedin"><span class="toc-num">10</span>LinkedIn Collection</a>
-    <a href="#run"><span class="toc-num">11</span>Run the Pipeline</a>
-    <a href="#automate"><span class="toc-num">12</span>Automate Daily</a>
-    <a href="#verify"><span class="toc-num">13</span>Verify & Test</a>
-    <a href="#errors"><span class="toc-num">14</span>Troubleshooting</a>
-    <a href="#security"><span class="toc-num">15</span>Security</a>
-  </aside>
-
-  <!-- MAIN CONTENT -->
-  <main class="content">
-
-    <!-- ══ 00 OVERVIEW ══ -->
-    <div class="section" id="overview">
-      <div class="section-header">
-        <div class="step-num">00</div>
-        <h2>System Overview<small>Understand the full pipeline before you build it</small></h2>
-      </div>
-
-      <p>Before touching a single file, understand what this system does end-to-end. There are <strong>two types of steps</strong> in this pipeline — steps <strong>you do manually</strong> (LinkedIn), and steps the <strong>code does automatically</strong> (everything else).</p>
-
-      <!-- ARCHITECTURE DIAGRAM -->
-      <div class="arch-diagram">
-        <div class="arch-label">⬇ YOU DO THIS MANUALLY</div>
-        <div class="arch-row">
-          <div class="arch-box manual">
-            <div class="arch-box-badge" style="position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:#ffc107;color:#000;font-size:9px;font-weight:700;text-transform:uppercase;padding:2px 8px;border-radius:100px;white-space:nowrap;">Manual Step</div>
-            <div class="box-icon">🔍</div>
-            <div class="box-title">LinkedIn Search</div>
-            <div class="box-file">Boolean queries<br>on LinkedIn Posts</div>
-          </div>
-          <div class="arch-arrow">→</div>
-          <div class="arch-box manual">
-            <div class="box-icon">📋</div>
-            <div class="box-title">Copy Posts</div>
-            <div class="box-file">Ctrl+A → Ctrl+C<br>30–50 posts</div>
-          </div>
-          <div class="arch-arrow">→</div>
-          <div class="arch-box manual">
-            <div class="box-icon">💾</div>
-            <div class="box-title">Save File</div>
-            <div class="box-file">linkedin.txt<br>in extractor folder</div>
-          </div>
-        </div>
-
-        <div class="arch-arrow down">↓</div>
-        <div class="arch-label">⬇ CODE DOES THIS AUTOMATICALLY</div>
-
-        <div class="arch-split">
-          <div class="arch-box auto">
-            <div class="box-icon">🐍</div>
-            <div class="box-title">LinkedIn Extractor</div>
-            <div class="box-file">extract_contacts.py</div>
-          </div>
-          <div class="arch-arrow">+</div>
-          <div class="arch-box auto">
-            <div class="box-icon">🌐</div>
-            <div class="box-title">Google Scraper</div>
-            <div class="box-file">google_leads_serper<br>_fetch1.py</div>
-          </div>
-          <div class="arch-arrow">→</div>
-          <div class="arch-box auto">
-            <div class="box-icon">🔗</div>
-            <div class="box-title">Merge & Dedup</div>
-            <div class="box-file">merge_emails.py</div>
-          </div>
-          <div class="arch-arrow">→</div>
-          <div class="arch-box auto">
-            <div class="box-icon">📧</div>
-            <div class="box-title">Gmail Sender</div>
-            <div class="box-file">gmail_auto_sender.py</div>
-          </div>
-        </div>
-
-        <div class="arch-arrow down">↓</div>
-        <div class="arch-split">
-          <div class="arch-box output">
-            <div class="box-icon">📄</div>
-            <div class="box-title">leads_emails.txt</div>
-          </div>
-          <div class="arch-arrow">+</div>
-          <div class="arch-box output">
-            <div class="box-icon">📄</div>
-            <div class="box-title">google_emails.txt</div>
-          </div>
-          <div class="arch-arrow">→</div>
-          <div class="arch-box output">
-            <div class="box-icon">📄</div>
-            <div class="box-title">all_emails.txt</div>
-          </div>
-          <div class="arch-arrow">→</div>
-          <div class="arch-box output">
-            <div class="box-icon">📋</div>
-            <div class="box-title">sent_log.txt</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="overview-grid">
-        <div class="overview-card">
-          <div class="ov-icon">🪟</div>
-          <div class="ov-title">Windows Only</div>
-          <div class="ov-desc">This guide is written specifically for Windows 10 / 11 with VS Code</div>
-        </div>
-        <div class="overview-card">
-          <div class="ov-icon">⏱️</div>
-          <div class="ov-title">~45–60 Minutes</div>
-          <div class="ov-desc">One-time setup. After this, running the pipeline takes 30 seconds</div>
-        </div>
-        <div class="overview-card">
-          <div class="ov-icon">🔑</div>
-          <div class="ov-title">2 API Keys Needed</div>
-          <div class="ov-desc">Serper API (free) and Gmail API (free OAuth — no credit card)</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="divider">Prerequisites</div>
-
-    <!-- ══ 01 PREREQS ══ -->
-    <div class="section" id="prereqs">
-      <div class="section-header">
-        <div class="step-num green">01</div>
-        <h2>Before You Begin<small>Confirm you have everything required</small></h2>
-      </div>
-      <p>Run through this checklist <strong>before starting</strong>. Skipping items causes failures mid-setup.</p>
-      <ul class="checklist">
-        <li><div class="check-box"></div><div><strong>Windows 10 or 11</strong> — this guide is Windows-specific</div></li>
-        <li><div class="check-box"></div><div><strong>Internet connection</strong> — needed for API calls, downloads, and Gmail</div></li>
-        <li><div class="check-box"></div><div><strong>A Gmail account</strong> — this is the account that will send outreach emails</div></li>
-        <li><div class="check-box"></div><div><strong>A LinkedIn account</strong> — free account is fine, used for manual post collection</div></li>
-        <li><div class="check-box"></div><div><strong>VS Code installed</strong> — if not, we cover this in Step 03</div></li>
-        <li><div class="check-box"></div><div><strong>45–60 minutes uninterrupted</strong> — don't start if you'll be interrupted mid-setup</div></li>
-        <li><div class="check-box"></div><div><strong>A browser logged into Google</strong> — you'll need it for the Cloud Console in Step 08</div></li>
-      </ul>
-    </div>
-
-    <div class="divider">Installation</div>
-
-    <!-- ══ 02 PYTHON ══ -->
-    <div class="section" id="python">
-      <div class="section-header">
-        <div class="step-num">02</div>
-        <h2>Install Python<small>Windows — the exact clicks, in order</small></h2>
-      </div>
-
-      <div class="callout info">
-        <span class="callout-icon">ℹ️</span>
-        <div>If you already have Python installed, open Command Prompt and run <code>python --version</code>. If it shows <code>Python 3.8.x</code> or higher — skip to Step 03.</div>
-      </div>
-
-      <ol class="steps">
-        <li>
-          <div class="step-body">
-            <div class="step-title">Go to python.org</div>
-            <div class="step-desc">Open your browser → go to <a href="https://www.python.org/downloads/" target="_blank">python.org/downloads</a> → click the big yellow <strong>"Download Python 3.x.x"</strong> button.</div>
-          </div>
-        </li>
-        <li>
-          <div class="step-body">
-            <div class="step-title">Run the installer</div>
-            <div class="step-desc">Open your Downloads folder → double-click the file (named something like <code>python-3.12.0-amd64.exe</code>).</div>
-          </div>
-        </li>
-        <li>
-          <div class="step-body">
-            <div class="step-title">⚠️ CHECK "Add Python to PATH" FIRST</div>
-            <div class="step-desc">On the installer's first screen — at the very bottom — you will see a checkbox. <strong>Check it before clicking anything else.</strong> This is the #1 mistake beginners make. Without this, Python won't work from the terminal.</div>
-          </div>
-        </li>
-        <li>
-          <div class="step-body">
-            <div class="step-title">Click "Install Now"</div>
-            <div class="step-desc">Click <strong>"Install Now"</strong> (not "Customize"). Wait for it to finish. Click <strong>Close</strong> when done.</div>
-          </div>
-        </li>
-        <li>
-          <div class="step-body">
-            <div class="step-title">Verify the install</div>
-            <div class="step-desc">Press <kbd>Win</kbd> + <kbd>R</kbd> → type <code>cmd</code> → press <kbd>Enter</kbd>. In the black window, type:</div>
-          </div>
-        </li>
-      </ol>
-
-      <div class="code-block">
-        <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><div class="code-lang">CMD</div></div>
-        <pre>python --version</pre>
-      </div>
-      <div class="callout success">
-        <span class="callout-icon">✅</span>
-        <div>If you see <strong>Python 3.x.x</strong> — Python is installed correctly. Move to Step 03.<br>If you see <strong>'python' is not recognized</strong> — you missed the PATH checkbox. Uninstall Python and reinstall, making sure to check it.</div>
-      </div>
-    </div>
-
-    <!-- ══ 03 VSCODE ══ -->
-    <div class="section" id="vscode">
-      <div class="section-header">
-        <div class="step-num green">03</div>
-        <h2>Setup VS Code<small>Install, open the project, and use the integrated terminal</small></h2>
-      </div>
-
-      <h3>Install VS Code</h3>
-      <ol class="steps">
-        <li>
-          <div class="step-body">
-            <div class="step-title">Download VS Code</div>
-            <div class="step-desc">Go to <a href="https://code.visualstudio.com/" target="_blank">code.visualstudio.com</a> → click <strong>"Download for Windows"</strong>. Run the installer with default settings.</div>
-          </div>
-        </li>
-        <li>
-          <div class="step-body">
-            <div class="step-title">Install Python Extension</div>
-            <div class="step-desc">Open VS Code → press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd> to open Extensions → search <strong>"Python"</strong> → click Install on the one by Microsoft.</div>
-          </div>
-        </li>
-      </ol>
-
-      <h3>Open the Project Folder in VS Code</h3>
-      <ol class="steps">
-        <li>
-          <div class="step-body">
-            <div class="step-title">Open the folder</div>
-            <div class="step-desc">In VS Code → click <strong>File → Open Folder</strong> → navigate to your <code>google_leads_extractor</code> folder → click <strong>"Select Folder"</strong>.</div>
-          </div>
-        </li>
-        <li>
-          <div class="step-body">
-            <div class="step-title">Open the integrated terminal</div>
-            <div class="step-desc">Press <kbd>Ctrl</kbd>+<kbd>`</kbd> (backtick — the key above Tab on most keyboards). A terminal panel opens at the bottom. This is where you run all commands in this guide.</div>
-          </div>
-        </li>
-        <li>
-          <div class="step-body">
-            <div class="step-title">Confirm you're in the right folder</div>
-            <div class="step-desc">The terminal prompt should end with the folder name — like <code>PS C:\Users\You\Desktop\google_leads_extractor&gt;</code>. If it doesn't, type <code>cd path\to\google_leads_extractor</code>.</div>
-          </div>
-        </li>
-      </ol>
-
-      <div class="vscode-window">
-        <div class="vscode-titlebar">
-          <div class="vs-dots"><span></span><span></span><span></span></div>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#888;">google_leads_extractor — Visual Studio Code</span>
-        </div>
-        <div class="vscode-tabs">
-          <div class="vs-tab active">TERMINAL</div>
-          <div class="vs-tab">PROBLEMS</div>
-          <div class="vs-tab">OUTPUT</div>
-        </div>
-        <div class="vscode-terminal">
-          <span class="ps">PS</span> <span style="color:#ffc107">C:\Users\You\Desktop\google_leads_extractor</span><span style="color:#ccc">&gt;</span> <span class="cmd-text">python --version</span><br>
-          <span class="out">Python 3.12.0</span><br>
-          <span class="ps">PS</span> <span style="color:#ffc107">C:\Users\You\Desktop\google_leads_extractor</span><span style="color:#ccc">&gt;</span> <span class="cmd-text">_</span>
-        </div>
-      </div>
-
-      <div class="callout tip">
-        <span class="callout-icon">💡</span>
-        <div><strong>VS Code Tip:</strong> All commands in this guide are run in the VS Code integrated terminal (<kbd>Ctrl</kbd>+<kbd>`</kbd>). You never need to open a separate Command Prompt window.</div>
-      </div>
-    </div>
-
-    <!-- ══ 04 PROJECT ══ -->
-    <div class="section" id="project">
-      <div class="section-header">
-        <div class="step-num purple">04</div>
-        <h2>Get the Project Files<small>Clone with Git or download the ZIP</small></h2>
-      </div>
-
-      <h3>Option A — Using Git (Recommended)</h3>
-      <div class="code-block">
-        <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><div class="code-lang">VS Code Terminal</div></div>
-        <pre><span class="comment"># In VS Code terminal, navigate to where you want the project</span>
-cd Desktop
-
-<span class="comment"># Clone the repository</span>
-git clone <span class="string">&lt;your-github-repo-url&gt;</span>
-
-<span class="comment"># Open the folder in VS Code</span>
-cd google_leads_extractor</pre>
-      </div>
-
-      <h3>Option B — Download ZIP (No Git needed)</h3>
-      <ol class="steps">
-        <li><div class="step-body"><div class="step-title">Go to the GitHub repo page in your browser</div></div></li>
-        <li><div class="step-body"><div class="step-title">Click the green "Code" button → "Download ZIP"</div></div></li>
-        <li><div class="step-body"><div class="step-title">Open Downloads folder → Right-click the ZIP → "Extract All"</div></div></li>
-        <li><div class="step-body"><div class="step-title">Extract to your Desktop or Documents folder</div></div></li>
-        <li><div class="step-body"><div class="step-title">In VS Code → File → Open Folder → select the extracted folder</div></div></li>
-      </ol>
-
-      <h3>Expected Project Structure After Download</h3>
-      <div class="file-tree">
-        <span class="ft-folder">📁 google_leads_extractor/</span><br>
-        &nbsp;&nbsp;<span class="ft-folder">├── 📁 output5/</span><br>
-        &nbsp;&nbsp;<span class="ft-folder">│&nbsp;&nbsp;&nbsp;├── 📁 linkedin_extractor/</span><br>
-        &nbsp;&nbsp;<span class="ft-folder">│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└── 📄 extract_contacts.py</span><br>
-        &nbsp;&nbsp;<span class="ft-folder">│&nbsp;&nbsp;&nbsp;├── 📄 leads_emails.txt</span> <span class="ft-comment">← created after running</span><br>
-        &nbsp;&nbsp;<span class="ft-folder">│&nbsp;&nbsp;&nbsp;├── 📄 google_emails.txt</span> <span class="ft-comment">← created after running</span><br>
-        &nbsp;&nbsp;<span class="ft-folder">│&nbsp;&nbsp;&nbsp;├── 📄 all_emails.txt</span> <span class="ft-comment">← created after running</span><br>
-        &nbsp;&nbsp;<span class="ft-folder">│&nbsp;&nbsp;&nbsp;└── 📄 sent_log.txt</span> <span class="ft-comment">← created after running</span><br>
-        &nbsp;&nbsp;<span class="ft-folder">├── 📁 src/</span><br>
-        &nbsp;&nbsp;<span class="ft-folder">│&nbsp;&nbsp;&nbsp;├── 📄 gmail_auto_sender.py</span><br>
-        &nbsp;&nbsp;<span class="ft-folder">│&nbsp;&nbsp;&nbsp;├── 📄 merge_emails.py</span><br>
-        &nbsp;&nbsp;<span class="ft-folder">│&nbsp;&nbsp;&nbsp;└── 📄 daily_pipeline.py</span><br>
-        &nbsp;&nbsp;<span class="ft-file highlight">├── 📄 google_leads_serper_fetch1.py</span> <span class="ft-comment">← add API key here</span><br>
-        &nbsp;&nbsp;<span class="ft-file warning-file">├── 📄 credentials.json</span> <span class="ft-comment">← you place this here (Step 08)</span><br>
-        &nbsp;&nbsp;<span class="ft-file warning-file">├── 📄 token.json</span> <span class="ft-comment">← auto-created after Gmail auth (Step 08)</span><br>
-        &nbsp;&nbsp;<span class="ft-file">├── 📄 requirements.txt</span><br>
-        &nbsp;&nbsp;<span class="ft-file">└── 📄 README.md</span>
-      </div>
-    </div>
-
-    <!-- ══ 05 VENV ══ -->
-    <div class="section" id="venv">
-      <div class="section-header">
-        <div class="step-num orange">05</div>
-        <h2>Create Virtual Environment<small>Isolate project dependencies from your system Python</small></h2>
-      </div>
-
-      <div class="callout info">
-        <span class="callout-icon">ℹ️</span>
-        <div>A virtual environment is a private, isolated copy of Python just for this project. It prevents conflicts with other Python projects on your computer. <strong>Always use one.</strong></div>
-      </div>
-
-      <p>Make sure VS Code's integrated terminal is open and you are inside the <code>google_leads_extractor</code> folder. Then run:</p>
-
-      <div class="code-block">
-        <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><div class="code-lang">VS Code Terminal</div></div>
-        <pre><span class="comment"># Step 1: Create the virtual environment</span>
-<span class="cmd">python -m venv .venv</span>
-
-<span class="comment"># Step 2: Activate it</span>
-<span class="cmd">.venv\Scripts\activate</span></pre>
-      </div>
-
-      <div class="vscode-window">
-        <div class="vscode-titlebar">
-          <div class="vs-dots"><span></span><span></span><span></span></div>
-        </div>
-        <div class="vscode-terminal">
-          <span class="ps">PS</span> <span style="color:#ffc107">...\google_leads_extractor</span><span style="color:#ccc">&gt;</span> <span class="cmd-text">python -m venv .venv</span><br>
-          <span class="ps">PS</span> <span style="color:#ffc107">...\google_leads_extractor</span><span style="color:#ccc">&gt;</span> <span class="cmd-text">.venv\Scripts\activate</span><br>
-          <span class="out success">(.venv) PS</span> <span style="color:#ffc107">...\google_leads_extractor</span><span style="color:#ccc">&gt; _</span>
-        </div>
-      </div>
-
-      <div class="callout success">
-        <span class="callout-icon">✅</span>
-        <div>When you see <strong>(.venv)</strong> at the start of your terminal prompt — the virtual environment is active and working.</div>
-      </div>
-
-      <div class="callout warning">
-        <span class="callout-icon">⚠️</span>
-        <div><strong>Every time you open a new VS Code terminal window</strong>, you must run <code>.venv\Scripts\activate</code> again before running any scripts. The activation does not persist between sessions.</div>
-      </div>
-
-      <h3>Select the Virtual Environment in VS Code</h3>
-      <ol class="steps">
-        <li><div class="step-body"><div class="step-title">Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the Command Palette</div></div></li>
-        <li><div class="step-body"><div class="step-title">Type "Python: Select Interpreter" and press Enter</div></div></li>
-        <li><div class="step-body"><div class="step-title">Select the one that shows <strong>.venv</strong> — it will look like <code>('.venv': venv) ./.venv/Scripts/python.exe</code></div></div></li>
-      </ol>
-      <p>This tells VS Code to always use your project's Python, not the system one.</p>
-    </div>
-
-    <!-- ══ 06 DEPS ══ -->
-    <div class="section" id="deps">
-      <div class="section-header">
-        <div class="step-num yellow">06</div>
-        <h2>Install Dependencies<small>All required packages in one command</small></h2>
-      </div>
-
-      <p>Make sure <code>(.venv)</code> is visible in your terminal prompt. Then run:</p>
-
-      <div class="code-block">
-        <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><div class="code-lang">VS Code Terminal</div></div>
-        <pre><span class="cmd">pip install -r requirements.txt</span></pre>
-      </div>
-
-      <p>This installs all 9 packages. You'll see a lot of scrolling text — that's normal. Takes 1–3 minutes.</p>
-
-      <div class="vscode-window">
-        <div class="vscode-titlebar">
-          <div class="vs-dots"><span></span><span></span><span></span></div>
-        </div>
-        <div class="vscode-terminal">
-          <span class="out success">(.venv)</span> <span class="ps">PS</span> <span style="color:#ffc107">...\google_leads_extractor</span><span style="color:#ccc">&gt;</span> <span class="cmd-text">pip install -r requirements.txt</span><br>
-          <span class="out">Collecting requests...</span><br>
-          <span class="out">Collecting beautifulsoup4...</span><br>
-          <span class="out">Collecting google-api-python-client...</span><br>
-          <span class="out" style="color:#888">... (more packages installing) ...</span><br>
-          <span class="out success">Successfully installed beautifulsoup4-4.12.2 google-api-python-client-2.x.x ...</span>
-        </div>
-      </div>
-
-      <div class="callout success">
-        <span class="callout-icon">✅</span>
-        <div>When you see <strong>"Successfully installed..."</strong> — all packages are ready. If you see any <code>ERROR</code>, run <code>pip install --upgrade pip</code> first, then retry.</div>
-      </div>
-
-      <table>
-        <tr><th>Package</th><th>What It Does</th></tr>
-        <tr><td><code>requests</code></td><td>Makes HTTP calls to the Serper API</td></tr>
-        <tr><td><code>beautifulsoup4</code></td><td>Parses HTML from scraped pages</td></tr>
-        <tr><td><code>lxml</code></td><td>Faster HTML parser engine</td></tr>
-        <tr><td><code>google-api-python-client</code></td><td>Core Gmail API client</td></tr>
-        <tr><td><code>google-auth</code> + <code>oauthlib</code> + <code>httplib2</code></td><td>Gmail OAuth authentication stack</td></tr>
-        <tr><td><code>python-dotenv</code></td><td>Load config from .env files</td></tr>
-        <tr><td><code>tqdm</code></td><td>Shows progress bar while sending emails</td></tr>
-      </table>
-    </div>
-
-    <div class="divider">API Configuration</div>
-
-    <!-- ══ 07 SERPER ══ -->
-    <div class="section" id="serper">
-      <div class="section-header">
-        <div class="step-num">07</div>
-        <h2>Get Your Serper API Key<small>Free Google Search API — 2,500 searches/month free</small></h2>
-      </div>
-
-      <div class="callout info">
-        <span class="callout-icon">ℹ️</span>
-        <div>Serper gives the script access to Google Search results without needing a browser. You get <strong>2,500 free searches/month</strong> — more than enough for daily lead generation.</div>
-      </div>
-
-      <ol class="steps">
-        <li>
-          <div class="step-body">
-            <div class="step-title">Go to serper.dev</div>
-            <div class="step-desc">Open your browser → go to <a href="https://serper.dev" target="_blank">serper.dev</a> → click <strong>"Get Started"</strong> or <strong>"Sign Up"</strong>.</div>
-          </div>
-        </li>
-        <li>
-          <div class="step-body">
-            <div class="step-title">Create a free account</div>
-            <div class="step-desc">Sign up with your email address. No credit card required. Verify your email if prompted.</div>
-          </div>
-        </li>
-        <li>
-          <div class="step-body">
-            <div class="step-title">Find your API Key</div>
-            <div class="step-desc">After logging in, look in the left sidebar or dashboard for <strong>"API Key"</strong>. You'll see a long string of letters and numbers — this is your key.</div>
-          </div>
-        </li>
-        <li>
-          <div class="step-body">
-            <div class="step-title">Copy the key</div>
-            <div class="step-desc">Click the <strong>Copy</strong> button next to the key (or select it and press <kbd>Ctrl</kbd>+<kbd>C</kbd>). Keep this handy — you paste it in Step 09.</div>
-          </div>
-        </li>
-      </ol>
-
-      <div class="code-block">
-        <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><div class="code-lang">What your key looks like</div></div>
-        <pre><span class="comment"># Your Serper API key will look something like this:</span>
-<span class="string">a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2</span></pre>
-      </div>
-    </div>
-
-    <!-- ══ 08 GMAIL ══ -->
-    <div class="section" id="gmail">
-      <div class="section-header">
-        <div class="step-num green">08</div>
-        <h2>Gmail API Setup<small>The most detailed step — done once, works forever</small></h2>
-      </div>
-
-      <div class="callout tip">
-        <span class="callout-icon">💡</span>
-        <div>This section has <strong>5 sub-steps</strong>. Read through all of them once before starting. Each one flows into the next. You only need to do this <strong>one time</strong> — after that, the <code>token.json</code> handles everything automatically.</div>
-      </div>
-
-      <h3>8.1 — Create a Google Cloud Project</h3>
-      <ol class="steps">
-        <li><div class="step-body"><div class="step-title">Go to <a href="https://console.cloud.google.com" target="_blank">console.cloud.google.com</a></div><div class="step-desc">Sign in with the Gmail account you want to use for sending emails.</div></div></li>
-        <li><div class="step-body"><div class="step-title">Click the project dropdown at the top</div><div class="step-desc">It shows "Select a project" or a current project name. Click it.</div></div></li>
-        <li><div class="step-body"><div class="step-title">Click "New Project" in the popup (top right)</div></div></li>
-        <li><div class="step-body"><div class="step-title">Name it anything</div><div class="step-desc">Example: <code>leads-outreach</code>. Leave Location as "No organization". Click <strong>Create</strong>.</div></div></li>
-        <li><div class="step-body"><div class="step-title">Make sure you're inside the new project</div><div class="step-desc">Click the project dropdown again and select your new project. The name should now show at the top of the page.</div></div></li>
-      </ol>
-
-      <h3>8.2 — Enable the Gmail API</h3>
-      <ol class="steps">
-        <li><div class="step-body"><div class="step-title">In the top search bar, type "Gmail API" and press Enter</div></div></li>
-        <li><div class="step-body"><div class="step-title">Click "Gmail API" in the results</div></div></li>
-        <li><div class="step-body"><div class="step-title">Click the blue "Enable" button</div><div class="step-desc">Wait a few seconds. You should see a green confirmation or "API enabled". ✅</div></div></li>
-      </ol>
-
-      <h3>8.3 — Configure the OAuth Consent Screen</h3>
-      <div class="callout warning">
-        <span class="callout-icon">⚠️</span>
-        <div>This step is required before you can create credentials. Google forces you to set up a consent screen — even for private personal apps.</div>
-      </div>
-      <ol class="steps">
-        <li><div class="step-body"><div class="step-title">In left sidebar → APIs & Services → OAuth consent screen</div></div></li>
-        <li><div class="step-body"><div class="step-title">Select "External" → click Create</div></div></li>
-        <li><div class="step-body"><div class="step-title">Fill in required fields only</div><div class="step-desc"><strong>App name:</strong> anything (e.g. <code>Leads Outreach</code>)<br><strong>User support email:</strong> select your email<br><strong>Developer contact info:</strong> type your email</div></div></li>
-        <li><div class="step-body"><div class="step-title">Click "Save and Continue" → on Scopes page, DON'T add anything → "Save and Continue"</div></div></li>
-        <li><div class="step-body"><div class="step-title">On "Test Users" → click "+ Add Users" → type your Gmail address → Add → "Save and Continue"</div></div></li>
-        <li><div class="step-body"><div class="step-title">Click "Back to Dashboard"</div></div></li>
-      </ol>
-
-      <h3>8.4 — Create OAuth 2.0 Credentials</h3>
-      <ol class="steps">
-        <li><div class="step-body"><div class="step-title">Left sidebar → APIs & Services → Credentials</div></div></li>
-        <li><div class="step-body"><div class="step-title">Click "+ Create Credentials" → "OAuth client ID"</div></div></li>
-        <li><div class="step-body"><div class="step-title">Application type → select "Desktop app"</div></div></li>
-        <li><div class="step-body"><div class="step-title">Name → type anything, e.g. <code>leads-client</code> → click Create</div></div></li>
-        <li><div class="step-body"><div class="step-title">In the popup that appears → click "Download JSON"</div></div></li>
-        <li><div class="step-body"><div class="step-title">Rename the downloaded file</div><div class="step-desc">It will have a long name like <code>client_secret_123...json</code>. Rename it to exactly: <code>credentials.json</code> (all lowercase, no spaces).</div></div></li>
-        <li><div class="step-body"><div class="step-title">Move credentials.json to your project root</div><div class="step-desc">Place it here: <code>google_leads_extractor\credentials.json</code> — same folder as <code>README.md</code>.</div></div></li>
-      </ol>
-
-      <h3>8.5 — First-Time Gmail Authorization</h3>
-      <p>This connects your Gmail account to the app. You do this <strong>once</strong>. It creates <code>token.json</code> which the app uses automatically from then on.</p>
-
-      <p>In VS Code terminal (with <code>(.venv)</code> active), run:</p>
-
-      <div class="code-block">
-        <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><div class="code-lang">VS Code Terminal</div></div>
-        <pre><span class="cmd">python src\gmail_auto_sender.py</span></pre>
-      </div>
-
-      <ol class="steps">
-        <li><div class="step-body"><div class="step-title">A browser window opens automatically</div><div class="step-desc">If it doesn't, a URL will appear in the terminal — copy-paste it into your browser.</div></div></li>
-        <li><div class="step-body"><div class="step-title">"Google hasn't verified this app" warning appears</div><div class="step-desc">This is <strong>completely normal</strong>. It's your own private app. Click <strong>"Advanced"</strong> → then <strong>"Go to [app name] (unsafe)"</strong>.</div></div></li>
-        <li><div class="step-body"><div class="step-title">Click "Continue" on the permissions screen</div></div></li>
-        <li><div class="step-body"><div class="step-title">Browser shows success message</div><div class="step-desc">You'll see "The authentication flow has completed" or similar. You can close the browser tab.</div></div></li>
-        <li><div class="step-body"><div class="step-title">Check for token.json in your project folder</div><div class="step-desc">Go to VS Code Explorer panel — you should now see <code>token.json</code> in the root folder. This file = Gmail is authorized. ✅</div></div></li>
-      </ol>
-
-      <div class="callout success">
-        <span class="callout-icon">✅</span>
-        <div>You now have both <code>credentials.json</code> and <code>token.json</code> in your project root. Gmail is configured. You will never need to do this again — unless you delete <code>token.json</code>.</div>
-      </div>
-    </div>
-
-    <!-- ══ 09 API KEY ══ -->
-    <div class="section" id="apikey">
-      <div class="section-header">
-        <div class="step-num purple">09</div>
-        <h2>Add Serper API Key to Script<small>Edit google_leads_serper_fetch1.py directly in VS Code</small></h2>
-      </div>
-
-      <p>The Serper API key is <strong>hardcoded directly</strong> inside the script file. Open it in VS Code and paste your key.</p>
-
-      <ol class="steps">
-        <li><div class="step-body"><div class="step-title">Open the file in VS Code</div><div class="step-desc">In VS Code's left Explorer panel → click <code>google_leads_serper_fetch1.py</code> to open it.</div></div></li>
-        <li><div class="step-body"><div class="step-title">Find the API key line</div><div class="step-desc">Press <kbd>Ctrl</kbd>+<kbd>F</kbd> to open Find → search for <code>SERPER_API_KEY</code>. You'll find a line like:</div></div></li>
-      </ol>
-
-      <div class="code-block">
-        <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><div class="code-lang">google_leads_serper_fetch1.py — BEFORE</div></div>
-        <pre><span class="keyword">SERPER_API_KEY</span> = <span class="string">'YOUR_API_KEY_HERE'</span></pre>
-      </div>
-
-      <ol class="steps" start="3">
-        <li><div class="step-body"><div class="step-title">Replace the placeholder with your real key</div><div class="step-desc">Delete <code>YOUR_API_KEY_HERE</code> and paste your Serper key from Step 07.</div></div></li>
-        <li><div class="step-body"><div class="step-title">Save the file</div><div class="step-desc">Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save. VS Code shows a dot on the tab when unsaved — make sure it's gone.</div></div></li>
-      </ol>
-
-      <div class="code-block">
-        <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><div class="code-lang">google_leads_serper_fetch1.py — AFTER</div></div>
-        <pre><span class="keyword">SERPER_API_KEY</span> = <span class="string">'a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2'</span></pre>
-      </div>
-
-      <div class="callout warning">
-        <span class="callout-icon">⚠️</span>
-        <div><strong>Never push this file to GitHub</strong> with the real key in it. Add <code>google_leads_serper_fetch1.py</code> to <code>.gitignore</code> or replace the key with a placeholder before committing.</div>
-      </div>
-
-      <h3>Also: Set the File Path in extract_contacts.py</h3>
-      <p>The LinkedIn extractor needs to know where to find your <code>linkedin.txt</code> file. Open <code>output5\linkedin_extractor\extract_contacts.py</code> in VS Code and find the file path variable. It will look like:</p>
-
-      <div class="code-block">
-        <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><div class="code-lang">extract_contacts.py</div></div>
-        <pre><span class="comment"># Find this line and set the correct path to your linkedin.txt</span>
-<span class="keyword">FILE_PATH</span> = <span class="string">r"output5\linkedin_extractor\linkedin.txt"</span>
-
-<span class="comment"># If your project is on the Desktop, the full path would be:</span>
-<span class="keyword">FILE_PATH</span> = <span class="string">r"C:\Users\YourName\Desktop\google_leads_extractor\output5\linkedin_extractor\linkedin.txt"</span></pre>
-      </div>
-
-      <div class="callout tip">
-        <span class="callout-icon">💡</span>
-        <div><strong>Windows Path Tip:</strong> To get the exact full path of any file — open File Explorer → navigate to the file → hold <kbd>Shift</kbd> + right-click the file → click <strong>"Copy as path"</strong>. Paste that into the script. Add an <code>r</code> before the quotes to make it a raw string: <code>r"C:\Users\..."</code></div>
-      </div>
-    </div>
-
-    <div class="divider">LinkedIn Collection</div>
-
-    <!-- ══ 10 LINKEDIN ══ -->
-    <div class="section" id="linkedin">
-      <div class="section-header">
-        <div class="step-num orange">10</div>
-        <h2>LinkedIn Manual Collection<small>The human-powered step — do this before every pipeline run</small></h2>
-      </div>
-
-      <div class="callout warning">
-        <span class="callout-icon">⚠️</span>
-        <div><strong>This step is done by YOU, not the code.</strong> LinkedIn aggressively blocks automated scraping. This manual approach keeps your account safe while still finding real recruiter emails from public posts.</div>
-      </div>
-
-      <h3>Step 10.1 — Log into LinkedIn</h3>
-      <p>Open your browser → go to <a href="https://www.linkedin.com" target="_blank">linkedin.com</a> → log in to your account.</p>
-
-      <h3>Step 10.2 — Use Boolean Search Queries</h3>
-      <p>Click in the LinkedIn <strong>search bar</strong> at the top. Paste one of these carefully crafted Boolean queries, then press <kbd>Enter</kbd>:</p>
-
-      <div class="bool-grid">
-        <div class="bool-card">
-          <div class="bool-label">🔥 Best Results</div>
-          <div class="bool-query">(<span class="term">"email me"</span> <span class="op">OR</span> <span class="term">"send your resume"</span>) <span class="op">AND</span> (<span class="term">"Data Scientist"</span> <span class="op">OR</span> <span class="term">"Data Science"</span>)</div>
-        </div>
-        <div class="bool-card">
-          <div class="bool-label">🤖 AI / ML Focus</div>
-          <div class="bool-query">(<span class="term">"hiring gen AI"</span>) (<span class="term">"@"</span>) (<span class="term">"send resume"</span> <span class="op">OR</span> <span class="term">"email"</span>) <span class="neg">-senior -sr</span></div>
-        </div>
-        <div class="bool-card">
-          <div class="bool-label">🌎 USA Targeted</div>
-          <div class="bool-query">(<span class="term">"hiring gen AI"</span>) <span class="op">AND</span> (<span class="term">"USA"</span>) <span class="op">AND</span> (<span class="term">"@"</span> <span class="op">OR</span> <span class="term">"email"</span>)</div>
-        </div>
-        <div class="bool-card">
-          <div class="bool-label">🏢 Recruiter Find</div>
-          <div class="bool-query"><span class="term">"Technical Recruiter"</span> <span class="term">"Data Science"</span> <span class="term">"Google"</span> <span class="term">"USA"</span></div>
-        </div>
-        <div class="bool-card">
-          <div class="bool-label">🧑‍💻 AI Engineer</div>
-          <div class="bool-query">(<span class="term">"hiring data scientist"</span> <span class="op">OR</span> <span class="term">"hiring ai engineer"</span>) (<span class="term">"@"</span>) (<span class="term">"send resume"</span> <span class="op">OR</span> <span class="term">"email"</span>)</div>
-        </div>
-        <div class="bool-card">
-          <div class="bool-label">#️⃣ Hashtag Search</div>
-          <div class="bool-query"><span class="term">#hiring</span> <span class="term">#datascientist</span> <span class="term">#usa</span><br><span class="term">#hiring</span> <span class="term">#AIengineer</span> <span class="term">#usa</span><br><span class="term">#genai</span> <span class="term">#usa</span> <span class="term">#jobs</span></div>
-        </div>
-      </div>
-
-      <h3>Step 10.3 — Filter by Posts + Recent Date</h3>
-      <ol class="steps">
-        <li><div class="step-body"><div class="step-title">After search results appear — click "Posts" tab</div><div class="step-desc">Look below the search bar for tabs: All, People, Jobs, <strong>Posts</strong>. Click Posts.</div></div></li>
-        <li><div class="step-body"><div class="step-title">Filter by recent date</div><div class="step-desc">Find the "Date posted" filter → select <strong>"Past week"</strong> or <strong>"Past 24 hours"</strong> for fresh, active recruiter leads.</div></div></li>
-      </ol>
-
-      <h3>Step 10.4 — Expand Posts and Read Content</h3>
-      <ol class="steps">
-        <li><div class="step-body"><div class="step-title">Scroll through results</div><div class="step-desc">Look for posts that mention "email me", contain an <code>@</code> symbol, or talk about hiring with resume submission instructions.</div></div></li>
-        <li><div class="step-body"><div class="step-title">Click "...see more" on each relevant post</div><div class="step-desc">This expands the full post text — email addresses are often in the part that gets cut off. Do this for <strong>30–50 posts</strong>.</div></div></li>
-      </ol>
-
-      <h3>Step 10.5 — Copy All Visible Content</h3>
-      <ol class="steps">
-        <li><div class="step-body"><div class="step-title">Scroll back to the top of the page</div></div></li>
-        <li><div class="step-body"><div class="step-title">Click once in an empty area of the page (not on a button)</div></div></li>
-        <li><div class="step-body"><div class="step-title">Press <kbd>Ctrl</kbd>+<kbd>A</kbd> to select everything</div></div></li>
-        <li><div class="step-body"><div class="step-title">Press <kbd>Ctrl</kbd>+<kbd>C</kbd> to copy</div></div></li>
-      </ol>
-
-      <h3>Step 10.6 — Save as linkedin.txt</h3>
-      <ol class="steps">
-        <li><div class="step-body"><div class="step-title">Open Notepad</div><div class="step-desc">Press <kbd>Win</kbd>+<kbd>R</kbd> → type <code>notepad</code> → press <kbd>Enter</kbd>.</div></div></li>
-        <li><div class="step-body"><div class="step-title">Paste the copied content</div><div class="step-desc">Press <kbd>Ctrl</kbd>+<kbd>V</kbd>.</div></div></li>
-        <li><div class="step-body"><div class="step-title">Save the file to the correct location</div><div class="step-desc">Click <strong>File → Save As</strong>. Navigate to: <code>google_leads_extractor → output5 → linkedin_extractor</code>. Name it <code>linkedin.txt</code>. Make sure "Save as type" is "Text Documents (*.txt)" — not "All Files".</div></div></li>
-      </ol>
-
-      <div class="callout warning">
-        <span class="callout-icon">⚠️</span>
-        <div><strong>Windows Double Extension Trap:</strong> Notepad sometimes saves <code>linkedin.txt.txt</code> instead of <code>linkedin.txt</code>. To check: open File Explorer → View → check "File name extensions". If you see <code>linkedin.txt.txt</code>, rename it to remove the extra <code>.txt</code>.</div>
-      </div>
-
-      <div class="file-tree">
-        <span class="ft-folder">📁 output5/linkedin_extractor/</span><br>
-        &nbsp;&nbsp;<span class="ft-file highlight">├── 📄 linkedin.txt</span>  <span class="ft-comment">← ✅ YOUR FILE GOES HERE</span><br>
-        &nbsp;&nbsp;<span class="ft-file">└── 📄 extract_contacts.py</span>
-      </div>
-    </div>
-
-    <div class="divider">Running the Pipeline</div>
-
-    <!-- ══ 11 RUN ══ -->
-    <div class="section" id="run">
-      <div class="section-header">
-        <div class="step-num yellow">11</div>
-        <h2>Run the Pipeline<small>Step by step, or all at once — your choice</small></h2>
-      </div>
-
-      <div class="callout success">
-        <span class="callout-icon">✅</span>
-        <div><strong>Pre-run checklist:</strong> Virtual environment active (<code>(.venv)</code> visible) · <code>credentials.json</code> in project root · <code>token.json</code> in project root · <code>linkedin.txt</code> saved · Serper key added to script</div>
-      </div>
-
-      <h3>Option A — Run Each Script Individually</h3>
-
-      <div class="code-block">
-        <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><div class="code-lang">VS Code Terminal — Step 1 of 4</div></div>
-        <pre><span class="comment"># STEP 1: Extract emails from linkedin.txt</span>
-<span class="cmd">python -u output5\linkedin_extractor\extract_contacts.py</span>
-<span class="comment"># Output: output5\leads_emails.txt</span></pre>
-      </div>
-
-      <div class="code-block">
-        <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><div class="code-lang">VS Code Terminal — Step 2 of 4</div></div>
-        <pre><span class="comment"># STEP 2: Scrape Google via Serper API</span>
-<span class="cmd">python -u google_leads_serper_fetch1.py</span>
-<span class="comment"># Output: output5\google_emails.txt</span></pre>
-      </div>
-
-      <div class="code-block">
-        <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><div class="code-lang">VS Code Terminal — Step 3 of 4</div></div>
-        <pre><span class="comment"># STEP 3: Merge and deduplicate all emails</span>
-<span class="cmd">python -u src\merge_emails.py</span>
-<span class="comment"># Output: output5\all_emails.txt</span></pre>
-      </div>
-
-      <div class="code-block">
-        <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><div class="code-lang">VS Code Terminal — Step 4 of 4</div></div>
-        <pre><span class="comment"># STEP 4: Send outreach emails via Gmail</span>
-<span class="cmd">python -u src\gmail_auto_sender.py</span>
-<span class="comment"># Updates: output5\sent_log.txt</span></pre>
-      </div>
-
-      <h3>Option B — Run Everything in One Command</h3>
-
-      <div class="code-block">
-        <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><div class="code-lang">VS Code Terminal — Full Pipeline</div></div>
-        <pre><span class="comment"># Runs all 4 steps automatically in sequence</span>
-<span class="cmd">python -u src\daily_pipeline.py</span></pre>
-      </div>
-
-      <div class="vscode-window">
-        <div class="vscode-titlebar">
-          <div class="vs-dots"><span></span><span></span><span></span></div>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#888;">Expected Terminal Output</span>
-        </div>
-        <div class="vscode-terminal">
-          <span class="out success">(.venv)</span> <span class="ps">PS</span> <span style="color:#ffc107">...\google_leads_extractor</span><span style="color:#ccc">&gt;</span> <span class="cmd-text">python -u src\daily_pipeline.py</span><br><br>
-          <span class="out">[1/4] Reading linkedin.txt...</span><br>
-          <span class="out success">     → Found 24 unique emails → saved to leads_emails.txt</span><br>
-          <span class="out">[2/4] Querying Serper API...</span><br>
-          <span class="out success">     → Found 19 emails → saved to google_emails.txt</span><br>
-          <span class="out">[3/4] Merging &amp; deduplicating...</span><br>
-          <span class="out success">     → 38 unique emails → saved to all_emails.txt</span><br>
-          <span class="out">[4/4] Sending emails...</span><br>
-          <span class="out">&nbsp;&nbsp;&nbsp;&nbsp; [████████████████████] 38/38 sent</span><br>
-          <span class="out success">     → sent_log.txt updated</span><br>
-          <span class="out success">Pipeline complete. ✓</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ══ 12 AUTOMATE ══ -->
-    <div class="section" id="automate">
-      <div class="section-header">
-        <div class="step-num">12</div>
-        <h2>Automate Daily Execution<small>Set it and forget it with Windows Task Scheduler</small></h2>
-      </div>
-
-      <div class="callout info">
-        <span class="callout-icon">ℹ️</span>
-        <div>Automation runs the code pipeline every day automatically. <strong>You still need to manually update linkedin.txt</strong> each time you want fresh leads. The scheduler handles Steps 1–4 automatically after that.</div>
-      </div>
-
-      <ol class="steps">
-        <li><div class="step-body"><div class="step-title">Open Task Scheduler</div><div class="step-desc">Press <kbd>Win</kbd>+<kbd>S</kbd> → search "Task Scheduler" → open it.</div></div></li>
-        <li><div class="step-body"><div class="step-title">Click "Create Basic Task" in the right panel</div></div></li>
-        <li><div class="step-body"><div class="step-title">Name it "Leads Pipeline Daily" → click Next</div></div></li>
-        <li><div class="step-body"><div class="step-title">Trigger → select "Daily" → click Next</div></div></li>
-        <li><div class="step-body"><div class="step-title">Set time (e.g. 9:00 AM) → click Next</div></div></li>
-        <li><div class="step-body"><div class="step-title">Action → "Start a program" → click Next</div></div></li>
-        <li>
-          <div class="step-body">
-            <div class="step-title">Fill in the program details</div>
-            <div class="step-desc">Use the table below as reference:</div>
-          </div>
-        </li>
-      </ol>
-
-      <table>
-        <tr><th>Field</th><th>Value to Enter</th></tr>
-        <tr><td><strong>Program/script</strong></td><td><code>C:\Users\YourName\Desktop\google_leads_extractor\.venv\Scripts\python.exe</code></td></tr>
-        <tr><td><strong>Add arguments</strong></td><td><code>src\daily_pipeline.py</code></td></tr>
-        <tr><td><strong>Start in</strong></td><td><code>C:\Users\YourName\Desktop\google_leads_extractor</code></td></tr>
-      </table>
-
-      <div class="callout tip">
-        <span class="callout-icon">💡</span>
-        <div><strong>Find your exact Python path:</strong> In VS Code terminal, run <code>where python</code> — it will show the full path to the Python executable inside your <code>.venv</code>.</div>
-      </div>
-
-      <ol class="steps" start="8">
-        <li><div class="step-body"><div class="step-title">Click Finish → Test it immediately</div><div class="step-desc">In Task Scheduler, find your new task → right-click → <strong>"Run"</strong>. Verify it executes without errors.</div></div></li>
-      </ol>
-    </div>
-
-    <!-- ══ 13 VERIFY ══ -->
-    <div class="section" id="verify">
-      <div class="section-header">
-        <div class="step-num green">13</div>
-        <h2>Verify Everything Worked<small>Check these files after your first complete run</small></h2>
-      </div>
-
-      <table>
-        <tr><th>File</th><th>Location</th><th>What to Check</th></tr>
-        <tr><td><code>leads_emails.txt</code></td><td>output5/</td><td>Should contain email addresses, one per line</td></tr>
-        <tr><td><code>google_emails.txt</code></td><td>output5/</td><td>Should contain emails from Google scraping</td></tr>
-        <tr><td><code>all_emails.txt</code></td><td>output5/</td><td>Merged list — should have no duplicates</td></tr>
-        <tr><td><code>sent_log.txt</code></td><td>output5/</td><td>Contains emails that were sent outreach</td></tr>
-        <tr><td><code>token.json</code></td><td>project root</td><td>File exists = Gmail auth was successful</td></tr>
-      </table>
-
-      <div class="callout tip">
-        <span class="callout-icon">💡</span>
-        <div><strong>Test tip before live run:</strong> Add your own email address to <code>all_emails.txt</code> and run the sender. Check that you receive the email correctly. Then clear <code>sent_log.txt</code> (open it, delete all lines, save) and run for real.</div>
-      </div>
-    </div>
-
-    <!-- ══ 14 ERRORS ══ -->
-    <div class="section" id="errors">
-      <div class="section-header">
-        <div class="step-num orange">14</div>
-        <h2>Troubleshooting<small>Every common error — cause and exact fix</small></h2>
-      </div>
-
-      <h3>❌ 'python' is not recognized as a command</h3>
-      <div class="callout warning">
-        <span class="callout-icon">🔧</span>
-        <div><strong>Cause:</strong> Python not added to PATH during install.<br><strong>Fix:</strong> Uninstall Python from Control Panel → reinstall → on the first screen, check "Add Python to PATH" before anything else.</div>
-      </div>
-
-      <h3>❌ ModuleNotFoundError: No module named 'requests'</h3>
-      <div class="callout warning">
-        <span class="callout-icon">🔧</span>
-        <div><strong>Cause:</strong> Running Python without the virtual environment active, OR packages weren't installed.<br><strong>Fix:</strong> Run <code>.venv\Scripts\activate</code> first → then <code>pip install -r requirements.txt</code>.</div>
-      </div>
-
-      <h3>❌ FileNotFoundError: linkedin.txt not found</h3>
-      <div class="callout warning">
-        <span class="callout-icon">🔧</span>
-        <div><strong>Cause:</strong> File is missing, saved with wrong name (<code>linkedin.txt.txt</code>), or path in script is wrong.<br><strong>Fix:</strong> Check File Explorer with extensions visible. Rename if needed. Update the <code>FILE_PATH</code> variable in <code>extract_contacts.py</code> to the exact full path.</div>
-      </div>
-
-      <h3>❌ credentials.json not found</h3>
-      <div class="callout warning">
-        <span class="callout-icon">🔧</span>
-        <div><strong>Cause:</strong> File renamed incorrectly or placed in wrong folder.<br><strong>Fix:</strong> File must be named exactly <code>credentials.json</code> and live in the same folder as <code>README.md</code>.</div>
-      </div>
-
-      <h3>❌ "Google hasn't verified this app" (Browser)</h3>
-      <div class="callout info">
-        <span class="callout-icon">ℹ️</span>
-        <div><strong>This is expected and safe.</strong> It's your own private app. Click <strong>Advanced</strong> → <strong>"Go to [app name] (unsafe)"</strong> → Continue. This is not a real security risk.</div>
-      </div>
-
-      <h3>❌ Token has been expired or revoked</h3>
-      <div class="callout warning">
-        <span class="callout-icon">🔧</span>
-        <div><strong>Cause:</strong> <code>token.json</code> expired.<br><strong>Fix:</strong> Delete <code>token.json</code> from the project folder → run <code>python src\gmail_auto_sender.py</code> again → re-authorize in browser.</div>
-      </div>
-
-      <h3>❌ leads_emails.txt is empty</h3>
-      <div class="callout warning">
-        <span class="callout-icon">🔧</span>
-        <div><strong>Cause:</strong> The posts you copied from LinkedIn didn't contain visible email addresses.<br><strong>Fix:</strong> Use better Boolean queries (especially the ones with <code>"@"</code>). Expand more posts before copying. Make sure you click "See more" on individual posts before Ctrl+A.</div>
-      </div>
-
-      <h3>❌ Gmail sends 0 emails / skips everyone</h3>
-      <div class="callout warning">
-        <span class="callout-icon">🔧</span>
-        <div><strong>Cause:</strong> Everyone is already in <code>sent_log.txt</code> from a previous run (prevents duplicates — this is by design).<br><strong>Fix for testing:</strong> Open <code>output5\sent_log.txt</code> → delete all content → save the empty file → run again.</div>
-      </div>
-    </div>
-
-    <!-- ══ 15 SECURITY ══ -->
-    <div class="section" id="security">
-      <div class="section-header">
-        <div class="step-num purple">15</div>
-        <h2>Security Checklist<small>Run through this before your first real send</small></h2>
-      </div>
-
-      <ul class="checklist">
-        <li><div class="check-box"></div><div><strong>token.json is in .gitignore</strong> — will NOT be pushed to GitHub</div></li>
-        <li><div class="check-box"></div><div><strong>credentials.json is in .gitignore</strong> — will NOT be pushed to GitHub</div></li>
-        <li><div class="check-box"></div><div><strong>Serper API key is not in a public file</strong> — consider removing before pushing</div></li>
-        <li><div class="check-box"></div><div><strong>Email template reviewed</strong> — open <code>gmail_auto_sender.py</code> and confirm the email body, subject, and your name are correct</div></li>
-        <li><div class="check-box"></div><div><strong>Tested on your own email first</strong> — add yourself to <code>all_emails.txt</code>, run the sender, confirm you receive it properly</div></li>
-        <li><div class="check-box"></div><div><strong>Daily send limit is conservative</strong> — stay under 100 emails/day to avoid Gmail spam flags</div></li>
-        <li><div class="check-box"></div><div><strong>Only targeting public posts</strong> — you are emailing people who shared their email address publicly in a LinkedIn post</div></li>
-      </ul>
-
-      <div class="code-block">
-        <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><div class="code-lang">.gitignore — add these lines</div></div>
-        <pre><span class="string">token.json</span>
-<span class="string">credentials.json</span>
-<span class="string">output5/sent_log.txt</span>
-<span class="string">.venv/</span></pre>
-      </div>
-
-      <div class="callout success">
-        <span class="callout-icon">🎉</span>
-        <div><strong>You're all set.</strong> If you followed every step in this guide, your pipeline is fully configured and ready to run. Update <code>linkedin.txt</code> with fresh posts, run <code>python -u src\daily_pipeline.py</code>, and watch it work.</div>
-      </div>
-    </div>
-
-  </main>
+---
+
+## 📋 Table of Contents
+
+| # | Section | Time |
+|---|---------|------|
+| [00](#-00--system-overview) | System Overview | 3 min read |
+| [01](#-01--before-you-begin) | Before You Begin — checklist | 2 min |
+| [02](#-02--install-python) | Install Python on Windows | 5 min |
+| [03](#-03--setup-vs-code) | Setup VS Code + integrated terminal | 5 min |
+| [04](#-04--get-the-project-files) | Get the Project Files | 3 min |
+| [05](#-05--create-virtual-environment) | Create Virtual Environment | 3 min |
+| [06](#-06--install-dependencies) | Install Dependencies | 3 min |
+| [07](#-07--get-your-serper-api-key) | Get Your Serper API Key | 3 min |
+| [08](#-08--gmail-api-setup) | Gmail API Setup — full walkthrough | 15 min |
+| [09](#-09--add-api-key--file-path-to-scripts) | Add API Key & File Path to Scripts | 3 min |
+| [10](#-10--linkedin-manual-collection) | LinkedIn Manual Collection | 10 min |
+| [11](#-11--run-the-pipeline) | Run the Pipeline | 2 min |
+| [12](#-12--automate-daily-execution) | Automate Daily Execution | 5 min |
+| [13](#-13--verify-everything-worked) | Verify Everything Worked | 3 min |
+| [14](#-14--troubleshooting) | Troubleshooting — 8 common errors | reference |
+| [15](#-15--security-checklist) | Security Checklist | 2 min |
+
+---
+
+## 🗺️ 00 — System Overview
+
+> Understand the full pipeline **before** you touch a single file.
+
+There are **two types of steps** in this system:
+
+| Type | Who Does It | Steps |
+|------|------------|-------|
+| 🟡 **Manual** | You | LinkedIn search → copy posts → save `linkedin.txt` |
+| 🔵 **Automatic** | The scripts | Extract → Scrape Google → Merge → Send emails |
+
+---
+
+### Full Pipeline Architecture
+
+```
+╔══════════════════════════════════════════════════════╗
+║           🟡 YOU DO THIS MANUALLY                    ║
+║                                                      ║
+║   LinkedIn Boolean Search  →  Open 30-50 Posts       ║
+║   →  Ctrl+A  →  Ctrl+C  →  Paste into linkedin.txt  ║
+╚══════════════════════════════╦═══════════════════════╝
+                               ║
+                               ▼
+        ┌──────────────────────────────────────┐
+        │          daily_pipeline.py           │
+        │       (Orchestrates everything)      │
+        └─────────┬──────────────────┬─────────┘
+                  │                  │
+      ┌───────────▼────┐    ┌────────▼──────────┐
+      │  LinkedIn      │    │  Google Scraper   │
+      │  Extractor     │    │  (Serper API)     │
+      │extract_        │    │google_leads_      │
+      │contacts.py     │    │serper_fetch1.py   │
+      └───────┬────────┘    └────────┬──────────┘
+              │                      │
+              ▼                      ▼
+      leads_emails.txt      google_emails.txt
+              │                      │
+              └──────────┬───────────┘
+                         ▼
+                  merge_emails.py
+                         │
+                         ▼
+                   all_emails.txt
+                         │
+                         ▼
+              gmail_auto_sender.py
+                         │
+                         ▼
+                   sent_log.txt ✓
+```
+
+---
+
+### What You Will Have After Setup
+
+- ✅ Recruiter emails extracted from LinkedIn posts you copy manually
+- ✅ Additional emails scraped from Google via Serper API
+- ✅ Both lists merged and deduplicated automatically
+- ✅ Outreach emails sent via your Gmail — zero manual clicking
+- ✅ Sent log tracking — nobody gets emailed twice
+- ✅ Daily automation via Windows Task Scheduler
+
+---
+
+## ✅ 01 — Before You Begin
+
+Run through this checklist **before starting anything else.**
+
+- [ ] Windows 10 or 11
+- [ ] Stable internet connection
+- [ ] A Gmail account *(this will send the outreach emails)*
+- [ ] A LinkedIn account *(free tier works fine)*
+- [ ] 45–60 minutes of uninterrupted time
+- [ ] A browser already logged into Google
+
+> ⚠️ **Do not start if you will be interrupted.** The Gmail API setup (Step 08) must be completed in one sitting.
+
+---
+
+## 🐍 02 — Install Python
+
+> **Already have Python?** Open Command Prompt → run `python --version`.
+> If you see `Python 3.8.x` or higher → **skip to Step 03.**
+
+### Download & Install
+
+**1.** Go to [python.org/downloads](https://www.python.org/downloads/) → click the big yellow **"Download Python 3.x.x"** button.
+
+**2.** Open your **Downloads** folder → double-click the installer file (e.g. `python-3.12.0-amd64.exe`).
+
+**3.** ⚠️ **STOP — do this before clicking anything else:**
+
+```
+┌──────────────────────────────────────────────────────┐
+│  Python 3.12.0 (64-bit) Setup                        │
+│                                                      │
+│  ○  Install Now                                      │
+│  ○  Customize installation                           │
+│                                                      │
+│  ☑  Add Python 3.12 to PATH   ← CHECK THIS BOX      │
+│                                  BEFORE YOU CLICK    │
+└──────────────────────────────────────────────────────┘
+```
+
+This is the **#1 mistake** beginners make. Without this, Python will not work from the terminal.
+
+**4.** Click **"Install Now"** → wait for it to finish → click **Close**.
+
+### Verify the Install
+
+Press `Win + R` → type `cmd` → press Enter. In the black window:
+
+```bash
+python --version
+```
+
+✅ **Good:** `Python 3.12.0` (or any 3.x.x version)
+
+❌ **Problem:** `'python' is not recognized` → you missed the PATH checkbox. Uninstall Python from Control Panel → reinstall → check the box.
+
+---
+
+## 💻 03 — Setup VS Code
+
+### Install VS Code
+
+**1.** Go to [code.visualstudio.com](https://code.visualstudio.com/) → click **"Download for Windows"** → run the installer with all default settings.
+
+**2.** Open VS Code → press `Ctrl + Shift + X` to open Extensions → search **"Python"** → click **Install** on the extension by **Microsoft**.
+
+---
+
+### Open the Project Folder
+
+**1.** Click **File → Open Folder** → navigate to your `google_leads_extractor` folder → click **"Select Folder"**.
+
+**2.** Open the integrated terminal — this is where ALL commands in this guide are run:
+
+```
+Shortcut:  Ctrl + `  (backtick — the key directly above Tab)
+```
+
+A terminal panel opens at the bottom of VS Code.
+
+**3.** Confirm the terminal is in the right folder. It should show:
+
+```
+PS C:\Users\YourName\Desktop\google_leads_extractor>
+```
+
+> 💡 If the path does not end with `google_leads_extractor`, run:
+> ```bash
+> cd C:\Users\YourName\Desktop\google_leads_extractor
+> ```
+
+---
+
+### Tell VS Code Which Python to Use
+
+After creating the virtual environment in Step 05, do this:
+
+1. Press `Ctrl + Shift + P`
+2. Type `Python: Select Interpreter` → press Enter
+3. Select the option showing `.venv`:
+   ```
+   Python 3.x.x ('.venv': venv) ./.venv/Scripts/python.exe
+   ```
+
+---
+
+## 📁 04 — Get the Project Files
+
+### Option A — Git Clone
+
+```bash
+# Run in the VS Code terminal
+git clone <your-github-repo-url>
+cd google_leads_extractor
+```
+
+### Option B — Download ZIP (No Git needed)
+
+**1.** Go to the GitHub page → click green **"Code"** button → **"Download ZIP"**
+
+**2.** Open Downloads → right-click the ZIP → **"Extract All"** → choose Desktop or Documents
+
+**3.** In VS Code → **File → Open Folder** → select the extracted folder
+
+---
+
+### Expected Folder Structure
+
+```
+📁 google_leads_extractor/
+│
+├── 📁 output5/
+│   ├── 📁 linkedin_extractor/
+│   │   └── 📄 extract_contacts.py
+│   ├── 📄 leads_emails.txt       ← created automatically after running
+│   ├── 📄 google_emails.txt      ← created automatically after running
+│   ├── 📄 all_emails.txt         ← created automatically after running
+│   └── 📄 sent_log.txt           ← created automatically after running
+│
+├── 📁 src/
+│   ├── 📄 gmail_auto_sender.py
+│   ├── 📄 merge_emails.py
+│   └── 📄 daily_pipeline.py
+│
+├── 📄 google_leads_serper_fetch1.py  ← you add Serper key here (Step 09)
+├── 📄 credentials.json               ← you place this here (Step 08)
+├── 📄 token.json                     ← auto-created after Gmail auth (Step 08)
+├── 📄 requirements.txt
+└── 📄 README.md
+```
+
+---
+
+## 🧪 05 — Create Virtual Environment
+
+> **What is this?** A private, isolated copy of Python just for this project. Prevents conflicts with other Python projects. Always use one.
+
+In the VS Code integrated terminal:
+
+```bash
+# Create the virtual environment
+python -m venv .venv
+
+# Activate it
+.venv\Scripts\activate
+```
+
+### How You Know It Worked
+
+Your terminal prompt changes to show `(.venv)` at the start:
+
+```
+(.venv) PS C:\Users\YourName\Desktop\google_leads_extractor>
+```
+
+✅ That `(.venv)` prefix = virtual environment is active.
+
+> ⚠️ **Every time you open a new VS Code terminal**, run `.venv\Scripts\activate` again before running any scripts. It does not stay active between sessions.
+
+---
+
+## 📦 06 — Install Dependencies
+
+Make sure `(.venv)` is visible in your terminal, then run:
+
+```bash
+pip install -r requirements.txt
+```
+
+Lots of scrolling text will appear — this is normal. Takes 1–3 minutes.
+
+### What Gets Installed
+
+| Package | What It Does |
+|---------|-------------|
+| `requests` | HTTP calls to the Serper API |
+| `beautifulsoup4` | Parses HTML from scraped pages |
+| `lxml` | Fast HTML parser backend |
+| `google-api-python-client` | Core Gmail API client |
+| `google-auth` | Google authentication handling |
+| `google-auth-oauthlib` | OAuth 2.0 login flow |
+| `google-auth-httplib2` | Gmail HTTP transport layer |
+| `python-dotenv` | Load config from `.env` files |
+| `tqdm` | Progress bar while sending emails |
+
+### Verify
+
+```bash
+pip list
+```
+
+✅ You should see `requests`, `beautifulsoup4`, `google-api-python-client`, and `tqdm` in the output.
+
+> ❌ **If you see errors:** Run `pip install --upgrade pip` first, then retry `pip install -r requirements.txt`.
+
+---
+
+## 🔑 07 — Get Your Serper API Key
+
+> Serper gives the script access to real Google Search results. **Free tier = 2,500 searches/month.** No credit card required.
+
+**1.** Go to [serper.dev](https://serper.dev) → click **"Get Started"** or **"Sign Up"**
+
+**2.** Create a free account with your email → verify your email if prompted
+
+**3.** After logging in → find **"API Key"** in the left sidebar or dashboard
+
+**4.** Your key looks like this:
+
+```
+a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2
+```
+
+**5.** Click the **Copy** button — you paste this into a script in Step 09.
+
+---
+
+## 📧 08 — Gmail API Setup
+
+> ⚠️ **Most detailed step in this guide.** Read all 5 sub-steps once before starting. Done **one time only** — after that, `token.json` handles Gmail authorization automatically.
+
+---
+
+### 8.1 — Create a Google Cloud Project
+
+**1.** Go to [console.cloud.google.com](https://console.cloud.google.com/) → sign in with the Gmail that will send outreach emails.
+
+**2.** Click the **project dropdown** at the top of the page.
+
+**3.** In the popup → click **"New Project"** (top right corner).
+
+**4.** Fill in:
+- **Project name:** anything — e.g. `leads-outreach`
+- **Location:** leave as "No organization"
+
+**5.** Click **Create** → wait a few seconds.
+
+**6.** Click the dropdown again → select your new project to confirm you are inside it.
+
+---
+
+### 8.2 — Enable the Gmail API
+
+**1.** In the top search bar → type `Gmail API` → press Enter
+
+**2.** Click **"Gmail API"** in results
+
+**3.** Click the blue **"Enable"** button → wait for confirmation ✅
+
+---
+
+### 8.3 — Configure OAuth Consent Screen
+
+> Required by Google before you can create credentials — even for private personal apps.
+
+**1.** Left sidebar → **APIs & Services** → **OAuth consent screen**
+
+**2.** Select **"External"** → click **Create**
+
+**3.** Fill in required fields only:
+
+| Field | What to Enter |
+|-------|--------------|
+| App name | Anything — e.g. `Leads Outreach` |
+| User support email | Select your email from dropdown |
+| Developer contact information | Type your email address |
+
+**4.** Click **"Save and Continue"**
+
+**5.** On the **Scopes** screen → do **NOT** add anything → **"Save and Continue"**
+
+**6.** On the **Test Users** screen → click **"+ Add Users"** → type your Gmail → **"Add"** → **"Save and Continue"**
+
+**7.** Click **"Back to Dashboard"** ✅
+
+---
+
+### 8.4 — Create OAuth 2.0 Credentials
+
+**1.** Left sidebar → **APIs & Services** → **Credentials**
+
+**2.** Click **"+ Create Credentials"** → **"OAuth client ID"**
+
+**3.** Application type → select **"Desktop app"**
+
+**4.** Name → type anything (e.g. `leads-client`) → click **Create**
+
+**5.** Popup appears → click **"Download JSON"**
+
+**6.** The file downloads with a long name like:
+
+```
+client_secret_123456789-abc.apps.googleusercontent.com.json
+```
+
+**7.** **Rename it** to exactly: `credentials.json`
+
+**8.** **Move it** into your project root — same folder as `README.md`:
+
+```
+google_leads_extractor\
+├── credentials.json   ← PUT IT HERE
+└── README.md
+```
+
+---
+
+### 8.5 — First-Time Gmail Authorization (One Time Only)
+
+In VS Code terminal (with `(.venv)` active):
+
+```bash
+python src\gmail_auto_sender.py
+```
+
+**What happens:**
+
+**1.** A browser window opens automatically *(if not, a URL appears in terminal — paste it in your browser)*
+
+**2.** You see this warning — it is **completely normal and safe:**
+
+```
+┌────────────────────────────────────────────┐
+│  Google hasn't verified this app           │
+│                                            │
+│  [Back to safety]     [Advanced ▼]         │
+└────────────────────────────────────────────┘
+
+→ Click "Advanced"
+→ Click "Go to [app name] (unsafe)"
+→ Click "Continue"
+```
+
+**3.** Browser shows: *"The authentication flow has completed."* — close the tab.
+
+**4.** In VS Code Explorer panel — you should now see `token.json` in the project root. ✅
+
+> ✅ You now have `credentials.json` + `token.json`. Gmail is fully configured. You never need to redo this unless you delete `token.json`.
+
+---
+
+## ⚙️ 09 — Add API Key & File Path to Scripts
+
+### Add the Serper API Key
+
+**1.** In VS Code Explorer → click `google_leads_serper_fetch1.py` to open it
+
+**2.** Press `Ctrl + F` → search for `SERPER_API_KEY`
+
+**3.** Replace the placeholder:
+
+```python
+# BEFORE:
+SERPER_API_KEY = 'YOUR_API_KEY_HERE'
+
+# AFTER — paste your real key:
+SERPER_API_KEY = 'a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2'
+```
+
+**4.** Press `Ctrl + S` to save ✅
+
+---
+
+### Set the linkedin.txt File Path
+
+**1.** Open `output5\linkedin_extractor\extract_contacts.py` in VS Code
+
+**2.** Find the file path variable and update it:
+
+```python
+# Set this to your actual full Windows path:
+FILE_PATH = r"C:\Users\YourName\Desktop\google_leads_extractor\output5\linkedin_extractor\linkedin.txt"
+```
+
+**3.** Press `Ctrl + S` ✅
+
+> 💡 **Easy way to get the exact path:** Open File Explorer → navigate to the `linkedin_extractor` folder → hold `Shift` + right-click any empty space → click **"Copy as path"** → paste into the script. Add `r` before the opening quote: `r"C:\..."` to prevent Windows backslash errors.
+
+> ⚠️ Never push `google_leads_serper_fetch1.py` to GitHub with a real API key in it. Replace it with `'YOUR_API_KEY_HERE'` before committing.
+
+---
+
+## 🔎 10 — LinkedIn Manual Collection
+
+> ⚠️ **Done by you manually before every pipeline run.** LinkedIn blocks all automated scraping. This manual approach keeps your account safe.
+
+---
+
+### Step 10.1 — Log Into LinkedIn
+
+Go to [linkedin.com](https://www.linkedin.com) → sign in.
+
+---
+
+### Step 10.2 — Boolean Search for Recruiter Posts
+
+Click the **LinkedIn search bar** → paste a query → press Enter:
+
+**🔥 Best performing — Data Science & AI/ML:**
+
+```
+("email me" OR "send your resume" OR "send your CV") AND ("Data Scientist" OR "Data Science")
+```
+
+```
+("hiring data scientist" OR "hiring ai engineer") ("@") ("send resume" OR "email")
+```
+
+```
+("hiring gen AI") ("@") ("send resume" OR "email") -senior -sr
+```
+
+```
+("hiring gen AI") AND ("USA") AND ("@" OR "email")
+```
+
+```
+"Technical Recruiter" "Data Science" "Google" "USA"
+```
+
+**Hashtag searches:**
+
+```
+#hiring #datascientist #usa
+#hiring #AIengineer #usa
+#genai #usa #jobs
+#datascience #recruiter #hiring
+```
+
+---
+
+### Step 10.3 — Filter to Posts + Recent Date
+
+**1.** Click the **"Posts"** tab below the search bar
+
+**2.** Find the **"Date posted"** filter → select **"Past week"** or **"Past 24 hours"**
+
+---
+
+### Step 10.4 — Expand Posts
+
+**1.** Scroll through results — look for posts with `@` symbols or email mentions
+
+**2.** Click **"...see more"** on each relevant post — emails are often in the collapsed part
+
+**3.** Expand **30–50 posts** per session
+
+> 💡 Expand posts in-place on the results page — don't open new tabs. This way `Ctrl+A` captures all of them at once.
+
+---
+
+### Step 10.5 — Copy All Content
+
+**1.** Scroll back to the top of the page
+
+**2.** Click once on a blank area (not a button)
+
+**3.** Press `Ctrl + A` — selects everything visible
+
+**4.** Press `Ctrl + C` — copies it all
+
+---
+
+### Step 10.6 — Save as `linkedin.txt`
+
+**1.** Press `Win + R` → type `notepad` → Enter
+
+**2.** Press `Ctrl + V` to paste
+
+**3.** Click **File → Save As**:
+   - Navigate to: `google_leads_extractor` → `output5` → `linkedin_extractor`
+   - File name: `linkedin.txt`
+   - Save as type: `Text Documents (*.txt)`
+   - Click **Save**
+
+**File must be saved here:**
+
+```
+google_leads_extractor/
+└── output5/
+    └── linkedin_extractor/
+        ├── linkedin.txt          ← ✅ YOUR FILE GOES HERE
+        └── extract_contacts.py
+```
+
+> ⚠️ **Windows double-extension trap:** Notepad sometimes saves as `linkedin.txt.txt`.
+> Check: File Explorer → View tab → enable **"File name extensions"**. If you see `.txt.txt` → right-click → Rename → remove the extra `.txt`.
+
+---
+
+## 🚀 11 — Run the Pipeline
+
+**Pre-run checklist:**
+
+- [ ] `(.venv)` is visible in your terminal prompt
+- [ ] `credentials.json` in project root
+- [ ] `token.json` in project root
+- [ ] `linkedin.txt` saved in `output5\linkedin_extractor\`
+- [ ] Serper API key added to `google_leads_serper_fetch1.py`
+- [ ] File path updated in `extract_contacts.py`
+
+---
+
+### Option A — Each Script Individually
+
+```bash
+# STEP 1: Extract emails from linkedin.txt
+python -u output5\linkedin_extractor\extract_contacts.py
+# → output5\leads_emails.txt
+
+# STEP 2: Scrape Google via Serper API
+python -u google_leads_serper_fetch1.py
+# → output5\google_emails.txt
+
+# STEP 3: Merge and deduplicate
+python -u src\merge_emails.py
+# → output5\all_emails.txt
+
+# STEP 4: Send outreach emails
+python -u src\gmail_auto_sender.py
+# → output5\sent_log.txt
+```
+
+---
+
+### Option B — Full Pipeline in One Command
+
+```bash
+python -u src\daily_pipeline.py
+```
+
+---
+
+### Expected Output
+
+```
+[1/4] Reading linkedin.txt...
+      → Found 24 unique emails → saved to leads_emails.txt ✓
+
+[2/4] Querying Serper API...
+      → Found 19 emails → saved to google_emails.txt ✓
+
+[3/4] Merging & deduplicating...
+      → 38 unique emails → saved to all_emails.txt ✓
+
+[4/4] Sending emails...
+      [████████████████████] 38/38 sent
+      → sent_log.txt updated ✓
+
+Pipeline complete ✓
+```
+
+> ⚠️ Before running the Gmail sender for real — open `src\gmail_auto_sender.py` and confirm the email subject, body, and your name are correct. Run a test to yourself first (Step 13).
+
+---
+
+## ⏰ 12 — Automate Daily Execution
+
+### Windows Task Scheduler
+
+**1.** Press `Win + S` → search **"Task Scheduler"** → open it
+
+**2.** Right panel → **"Create Basic Task"**
+
+**3.** Name: `Leads Pipeline Daily` → Next
+
+**4.** Trigger: **Daily** → Next
+
+**5.** Time: e.g. `9:00:00 AM` → Next
+
+**6.** Action: **"Start a program"** → Next
+
+**7.** Fill in:
+
+| Field | Value |
+|-------|-------|
+| **Program/script** | `C:\Users\YourName\Desktop\google_leads_extractor\.venv\Scripts\python.exe` |
+| **Add arguments** | `src\daily_pipeline.py` |
+| **Start in** | `C:\Users\YourName\Desktop\google_leads_extractor` |
+
+> 💡 Find your exact Python path — in VS Code terminal run `where python`. Copy the path containing `.venv\Scripts\python.exe`.
+
+**8.** Click **Finish**
+
+**9.** Right-click the task → **"Run"** → confirm it works ✅
+
+---
+
+## ✔️ 13 — Verify Everything Worked
+
+| File | Location | What to Check |
+|------|----------|--------------|
+| `leads_emails.txt` | `output5/` | Email addresses, one per line |
+| `google_emails.txt` | `output5/` | Emails from Google scraping |
+| `all_emails.txt` | `output5/` | Merged, deduplicated list |
+| `sent_log.txt` | `output5/` | Emails sent outreach |
+| `token.json` | project root | File exists = Gmail auth OK |
+
+### Test Before Going Live
+
+**1.** Add your own email to `output5\all_emails.txt`
+
+**2.** Run `python -u src\gmail_auto_sender.py`
+
+**3.** Check your inbox — confirm email arrives and looks correct
+
+**4.** Open `output5\sent_log.txt` → delete all content → save the empty file
+
+**5.** Run the full pipeline for real ✅
+
+---
+
+## 🔧 14 — Troubleshooting
+
+### ❌ `'python' is not recognized`
+**Cause:** Python not added to PATH. **Fix:** Reinstall Python → check "Add Python to PATH" on first screen.
+
+---
+
+### ❌ `ModuleNotFoundError: No module named 'requests'`
+**Cause:** Virtual environment not activated. **Fix:**
+```bash
+.venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+---
+
+### ❌ `FileNotFoundError: linkedin.txt not found`
+**Cause:** File missing, named `linkedin.txt.txt`, or wrong path in script. **Fix:** Check extension in File Explorer. Rename if needed. Update `FILE_PATH` in `extract_contacts.py`.
+
+---
+
+### ❌ `credentials.json not found`
+**Cause:** Wrong filename or wrong folder. **Fix:** File must be named exactly `credentials.json` in the same folder as `README.md`.
+
+---
+
+### ❌ `"Google hasn't verified this app"` in browser
+**This is normal and safe.** Click **"Advanced"** → **"Go to [app name] (unsafe)"** → **"Continue"**.
+
+---
+
+### ❌ `Token has been expired or revoked`
+**Fix:**
+```bash
+del token.json
+python src\gmail_auto_sender.py
+# Re-authorize in browser
+```
+
+---
+
+### ❌ `leads_emails.txt` is empty
+**Cause:** Posts copied had no visible email addresses. **Fix:** Use queries with `("@")`. Click **"see more"** on each post before `Ctrl+A`. Filter to **"Past 24 hours"**.
+
+---
+
+### ❌ Gmail sender sends 0 emails
+**Cause:** All emails already in `sent_log.txt` (prevents duplicates — works as intended). **Fix for reset:**
+```
+Open output5\sent_log.txt → delete all content → save empty file → run again
+```
+
+---
+
+## 🔒 15 — Security Checklist
+
+- [ ] `token.json` added to `.gitignore`
+- [ ] `credentials.json` added to `.gitignore`
+- [ ] Serper API key replaced with placeholder before GitHub push
+- [ ] Email template confirmed in `gmail_auto_sender.py`
+- [ ] Tested with your own email first
+- [ ] Daily send volume under **100 emails/day** to avoid Gmail spam flags
+- [ ] Only targeting people who publicly posted their email on LinkedIn
+
+### Recommended `.gitignore`
+
+```
+token.json
+credentials.json
+output5/sent_log.txt
+.venv/
+```
+
+---
+
+<div align="center">
+
+---
+
+### 🎉 You're All Set
+
+**Your daily workflow going forward:**
+
+```
+1. LinkedIn Boolean search → copy posts → save linkedin.txt
+2. python -u src\daily_pipeline.py
+3. Done.
+```
+
+---
+
+*Setup Guide v1.0 · Google Leads Extractor & Automated Outreach System*
+*Windows 10/11 + VS Code + Python 3.8+*
+
 </div>
-
-<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
-<div class="footer">
-  <strong>Google Leads Extractor & Automated Outreach System</strong><br>
-  Setup Guide v1.0 · Built for Windows + VS Code · Python 3.8+
-  <br><br>
-  <span style="color:#3a4a6b;">If you get stuck on any step, re-read from the beginning of that section.</span>
-</div>
-
-</body>
-</html>
